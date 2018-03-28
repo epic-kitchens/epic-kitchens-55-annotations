@@ -20,7 +20,7 @@ Michael Wray (1)
 * (2 University of Toronto)
 * (3 University of Catania)
 
-**Contact:** dima.damen@bristol.ac.uk
+**Contact:** uob-epic-kitchens2018@bristol.ac.uk
 
 
 ## Citing
@@ -36,15 +36,15 @@ When using the dataset, kindly reference:
 We provide ground truth for action segments and object bounding boxes.
 
 * **Objects:** Full bounding boxes for every annotated frame.
-* **Actions:** Split into weak and strong labels:
-    * Weak labels containing the narrated sentence with the timestamp.
-    * Strong labels containing the verb and noun labels along with the start and end times of the segment.
+* **Actions:** Split into narrations and action labels:
+    * Narrations containing the narrated sentence with the timestamp.
+    * Action labels containing the verb and noun labels along with the start and end times of the segment.
 
 ### Dataset Splits
 The dataset is comprised of three splits with the corresponding ground truth:
 
 * Training set - Full ground truth.
-* Test set - Weak action labels only.
+* Test set - Timestamp and start/end times only.
 
 Initially we are only releasing the full ground truth for the training set in order to run action and object challenges.
 
@@ -53,24 +53,24 @@ Initially we are only releasing the full ground truth for the training set in or
 * `README.md (this file)`
 * `license.txt`
 * `EPIC.zip`:
-    * `EPIC_train_action_weak.csv`
-    * `EPIC_train_action_strong.csv`
-    * `EPIC_train_action_strong.pkl`
-    * `EPIC_train_object.csv`
-    * `EPIC_S1_weak.csv`
-    * `EPIC_S2_weak.csv`
+    * `EPIC_train_action_narrations.csv`
+    * `EPIC_train_action_labels.csv`
+    * `EPIC_train_action_labels.pkl`
+    * `EPIC_train_object_labels.csv`
+    * `EPIC_test_S1_timestamps.csv`
+    * `EPIC_test_S2_timestamps.csv`
 
-We direct the reader to [RSDF]() for the videos and rgb/flow frames.
+We direct the reader to [RDSF]() for the videos and rgb/flow frames.
 
 ## Files Structure
-### EPIC_train_action_weak.csv
+### EPIC_train_action_narrations.csv
 Csv file containing n columns:
 
 * Col 1
 * Col 2
 * ...
 
-### EPIC_train_action_strong.csv
+### EPIC_train_action_labels.csv
 Csv file containing n columns:
 
 * Col 1
@@ -80,7 +80,7 @@ Csv file containing n columns:
 Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above.
 
-### EPIC_train_object.csv
+### EPIC_train_object_labels.csv
 Csv file containing n columns:
 
 * Col 1
