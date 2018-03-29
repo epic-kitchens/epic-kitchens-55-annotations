@@ -52,12 +52,12 @@ Initially we are only releasing the full ground truth for the training set in or
 ### Important Files
 * `README.md (this file)`
 * `license.txt`
-* `EPIC_train_action_narrations.csv`
-* `EPIC_train_action_labels.csv`
-* `EPIC_train_action_labels.pkl`
-* `EPIC_train_object_labels.csv`
-* `EPIC_test_s1_timestamps.csv`
-* `EPIC_test_s2_timestamps.csv`
+* [`EPIC_train_action_narrations.csv`](#epic_train_action_narrationscsv)
+* [`EPIC_train_action_labels.csv`](#epic_train_action_labelscsv)
+* [`EPIC_train_action_labels.pkl`](#epic_train_action_labelscsv)
+* [`EPIC_train_object_labels.csv`](#epic_train_object_labelscsv)
+* [`EPIC_test_s1_timestamps.csv`](#epic_test_s1_timestampscsv)
+* [`EPIC_test_s2_timestamps.csv`](#epic_test_s2_timestampscsv)
 
 We direct the reader to [RDSF]() for the videos and rgb/flow frames.
 
