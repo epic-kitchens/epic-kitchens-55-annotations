@@ -56,8 +56,8 @@ Initially we are only releasing the full ground truth for the training set in or
 * `EPIC_train_action_labels.csv`
 * `EPIC_train_action_labels.pkl`
 * `EPIC_train_object_labels.csv`
-* `EPIC_test_S1_timestamps.csv`
-* `EPIC_test_S2_timestamps.csv`
+* `EPIC_test_s1_timestamps.csv`
+* `EPIC_test_s2_timestamps.csv`
 
 We direct the reader to [RDSF]() for the videos and rgb/flow frames.
 
@@ -105,6 +105,22 @@ CSV file containing 6 columns:
 | `video_id`       | string                      | Video the object was annotated in.                                            |
 | `frame`          | int                         | Frame number of the annotated object.                                         |
 | `bounding_boxes` | list of 4-tuple (0 or more) | Annotated boxes with format `(<top:int>,<left:int>,<width:int>,<height:int>)`.|
+
+### EPIC_test_s1_timestamps.csv
+CSV file containing 2 columns:
+
+| Column Name      | Type   | Description                                                    |
+|------------------|--------|----------------------------------------------------------------|
+|`start_timestamp` | string | Start time in `HH:mm:ss.SSS` of the action.                    |
+|`stop_timestamp`  | string | End time in `HH:mm:ss.SSS` of the action.                      |
+
+### EPIC_test_s2_timestamps.csv
+CSV file containing 2 columns:
+
+| Column Name      | Type   | Description                                                    |
+|------------------|--------|----------------------------------------------------------------|
+|`start_timestamp` | string | Start time in `HH:mm:ss.SSS` of the action.                    |
+|`stop_timestamp`  | string | End time in `HH:mm:ss.SSS` of the action.                      |
 
 ## Video Information
 Videos are recorded in 1080p at 59.94 FPS on a GoPro Hero 5 with linear field of
