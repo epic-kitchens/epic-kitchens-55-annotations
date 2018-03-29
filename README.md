@@ -78,19 +78,18 @@ CSV file containing 14 columns:
 | ------------------- | ---------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `uid`               | int                          | `6374`                       | Unique ID of the segment.                                                                                             |
 | `video_id`          | string                       | `'P03_01'`                   | Video the segment is in.                                                                                              |
-| `narration`         | string                       | `'close fridge'` | English description of the action provided by the participant.                                                        |
+| `narration`         | string                       | `'close fridge'`             | English description of the action provided by the participant.                                                        |
 | `start_timestamp`   | string                       | `'00:23:43.847'`             | Start time in `HH:mm:ss.SSS` of the action.                                                                           |
-| `stop_timestamp`    | string                       | `'00:23:47.212'`             | End time in `HH:mm:ss.SSS` of the action                                                                              |
+| `stop_timestamp`    | string                       | `'00:23:47.212'`             | End time in `HH:mm:ss.SSS` of the action.                                                                             |
 | `start_frame`       | int                          | `85430`                      | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information).  |
 | `stop_frame`        | int                          | `85643`                      | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information).   |
-| `participant_id`    | string                       | `'P03'`                      | ID of the participant                                                                                                 |
+| `participant_id`    | string                       | `'P03'`                      | ID of the participant.                                                                                                |
 | `verb`              | string                       | `'close'`                    | Parsed verb from the narration.                                                                                       |
 | `noun`              | string                       | `'fridge'`                   | First parsed noun from the narration.                                                                                 |
 | `verb_class`        | int                          | `3`                          | Numeric ID of the parsed verb's class.                                                                                |
 | `noun_class`        | int                          | `10`                         | Numeric ID of the parsed noun's class.                                                                                |
 | `all_nouns`         | list of string (1 or more)   | `['fridge']`                 | List of all parsed nouns from the narration.                                                                          |
 | `all_nouns_class`   | list of int    (1 or more)   | `[10]`                       | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                             |
-
 
 Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above.
