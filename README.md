@@ -52,40 +52,59 @@ Initially we are only releasing the full ground truth for the training set in or
 ### Important Files
 * `README.md (this file)`
 * `license.txt`
-* `EPIC.zip`:
-    * `EPIC_train_action_narrations.csv`
-    * `EPIC_train_action_labels.csv`
-    * `EPIC_train_action_labels.pkl`
-    * `EPIC_train_object_labels.csv`
-    * `EPIC_test_S1_timestamps.csv`
-    * `EPIC_test_S2_timestamps.csv`
+* `EPIC_train_action_narrations.csv`
+* `EPIC_train_action_labels.csv`
+* `EPIC_train_action_labels.pkl`
+* `EPIC_train_object_labels.csv`
+* `EPIC_test_S1_timestamps.csv`
+* `EPIC_test_S2_timestamps.csv`
 
 We direct the reader to [RDSF]() for the videos and rgb/flow frames.
 
 ## Files Structure
 ### EPIC_train_action_narrations.csv
-Csv file containing n columns:
+CSV file containing 3 columns:
 
-* Col 1
-* Col 2
-* ...
+| Column Name      | Type   | Description                                                    |
+|------------------|--------|----------------------------------------------------------------|
+|`start_timestamp` | string | Start time in `HH:mm:ss.SSS` of the action.                    |
+|`stop_timestamp`  | string | End time in `HH:mm:ss.SSS` of the action.                      |
+|`narration`       | string | English description of the action provided by the participant. |
 
 ### EPIC_train_action_labels.csv
-Csv file containing n columns:
+CSV file containing 14 columns:
 
-* Col 1
-* Col 2
-* ...
+| Column Name       | Type                       | Description                                                                                                         |
+|-------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `uid`             | int                        | Unique ID of the segment.                                                                                           |
+| `video_id`        | string                     | Video the segment is in.                                                                                            |
+| `narration`       | string                     | English description of the action provided by the participant.                                                      |
+| `start_timestamp` | string                     | Start time in `HH:mm:ss.SSS` of the action.                                                                         |
+| `stop_timestamp`  | string                     | End time in `HH:mm:ss.SSS` of the action                                                                            |
+| `start_frame`     | int                        | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information).|
+| `stop_frame`      | int                        | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information). |
+| `participant_id`  | string                     | ID of the participant                                                                                               |
+| `verb`            | string                     | Parsed verb from the narration.                                                                                     |
+| `noun`            | string                     | First parsed noun from the narration.                                                                               |
+| `verb_class`      | int                        | Numeric ID of the parsed verb's class.                                                                              |
+| `noun_class`      | int                        | Numeric ID of the parsed noun's class.                                                                              |
+| `all_nouns`       | list of string (1 or more) | List of all parsed nouns from the narration.                                                                        |
+| `all_nouns_class` | list of int    (1 or more) | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                           |
 
 Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above.
 
 ### EPIC_train_object_labels.csv
-Csv file containing n columns:
+CSV file containing 6 columns:
 
-* Col 1
-* Col 2
-* ...
+| Column Name      | Type                        | Description                                                                   |
+|------------------|-----------------------------|-------------------------------------------------------------------------------|
+| `noun_class`     | int                         | Integer value representing the class in noun-classes.csv.                     |
+| `noun`           | string                      | Original string name for the object.                                          |
+| `participant_id` | string                      | ID of participant.                                                            |
+| `video_id`       | string                      | Video the object was annotated in.                                            |
+| `frame`          | int                         | Frame number of the annotated object.                                         |
+| `bounding_boxes` | list of 4-tuple (0 or more) | Annotated boxes with format `(<top:int>,<left:int>,<width:int>,<height:int>)`.|
 
 ## Video Information
 Videos are recorded in 1080p at 59.94 FPS on a GoPro Hero 5 with linear field of
