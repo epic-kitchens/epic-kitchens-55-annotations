@@ -78,7 +78,7 @@ CSV file containing 14 columns:
 | ------------------- | ---------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `uid`               | int                          | `6374`                       | Unique ID of the segment.                                                                                             |
 | `video_id`          | string                       | `'P03_01'`                   | Video the segment is in.                                                                                              |
-| `narration`         | string                       | `'P03_01_6374_close-fridge'` | English description of the action provided by the participant.                                                        |
+| `narration`         | string                       | `'close gridge'` | English description of the action provided by the participant.                                                        |
 | `start_timestamp`   | string                       | `'00:23:43.847'`             | Start time in `HH:mm:ss.SSS` of the action.                                                                           |
 | `stop_timestamp`    | string                       | `'00:23:47.212'`             | End time in `HH:mm:ss.SSS` of the action                                                                              |
 | `start_frame`       | int                          | `85430`                      | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information).  |
