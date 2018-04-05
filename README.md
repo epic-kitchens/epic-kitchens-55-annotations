@@ -35,7 +35,7 @@ When using the dataset, kindly reference:
 ### Ground Truth
 We provide ground truth for action segments and object bounding boxes.
 
-* **Objects:** Full bounding boxes for every annotated frame.
+* **Objects:** Full bounding boxes of narrated objects for every annotated frame.
 * **Actions:** Split into narrations and action labels:
     * Narrations containing the narrated sentence with the timestamp.
     * Action labels containing the verb and noun labels along with the start and end times of the segment.
