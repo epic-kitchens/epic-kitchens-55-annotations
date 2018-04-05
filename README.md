@@ -65,13 +65,15 @@ We direct the reader to [RDSF]() for the videos and rgb/flow frames.
 
 ## Files Structure
 ### EPIC_train_action_narrations.csv
-CSV file containing 3 columns:
+CSV file containing 5 columns:
 
-| Column Name      | Type   | Description                                                    |
-|------------------|--------|----------------------------------------------------------------|
-|`start_timestamp` | string | Start time in `HH:mm:ss.SSS` of the action.                    |
-|`stop_timestamp`  | string | End time in `HH:mm:ss.SSS` of the action.                      |
-|`narration`       | string | English description of the action provided by the participant. |
+| Column Name       | Type   | Example        | Description                                                    |
+| ----------------- | ------ |--------------- | -------------------------------------------------------------- |
+| `participant_id`  | string | `'P03'`        | ID of the participant.                                         |
+| `video_id`        | string | `'P03_01'`     | Video the segment is in.                                       |
+| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
+| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
+| `narration`       | string | `close fridge` | English description of the action provided by the participant. |
 
 ### EPIC_train_action_labels.csv
 CSV file containing 14 columns:
