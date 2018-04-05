@@ -111,20 +111,26 @@ CSV file containing 6 columns:
 | `bounding_boxes` | list of 4-tuple (0 or more) | Annotated boxes with format `(<top:int>,<left:int>,<width:int>,<height:int>)`.|
 
 ### EPIC_test_s1_timestamps.csv
-CSV file containing 2 columns:
+CSV file containing 4 columns:
 
-| Column Name      | Type   | Description                                                    |
-|------------------|--------|----------------------------------------------------------------|
-|`start_timestamp` | string | Start time in `HH:mm:ss.SSS` of the action.                    |
-|`stop_timestamp`  | string | End time in `HH:mm:ss.SSS` of the action.                      |
+| Column Name       | Type   | Example        | Description                                                    |
+| ----------------- | ------ |--------------- | -------------------------------------------------------------- |
+| `participant_id`  | string | `'P03'`        | ID of the participant.                                         |
+| `video_id`        | string | `'P03_01'`     | Video the segment is in.                                       |
+| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
+| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
 
 ### EPIC_test_s2_timestamps.csv
-CSV file containing 2 columns:
+CSV file containing 4 columns:
 
-| Column Name      | Type   | Description                                                    |
-|------------------|--------|----------------------------------------------------------------|
-|`start_timestamp` | string | Start time in `HH:mm:ss.SSS` of the action.                    |
-|`stop_timestamp`  | string | End time in `HH:mm:ss.SSS` of the action.                      |
+| Column Name       | Type   | Example        | Description                                                    |
+| ----------------- | ------ |--------------- | -------------------------------------------------------------- |
+| `participant_id`  | string | `'P03'`        | ID of the participant.                                         |
+| `video_id`        | string | `'P03_01'`     | Video the segment is in.                                       |
+| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
+| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
+
+
 
 ## Video Information
 Videos are recorded in 1080p at 59.94 FPS on a GoPro Hero 5 with linear field of
