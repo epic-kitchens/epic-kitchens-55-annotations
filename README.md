@@ -67,12 +67,14 @@ We direct the reader to [RDSF]() for the videos and rgb/flow frames.
 ### EPIC_train_action_narrations.csv
 CSV file containing 5 columns:
 
+*Note: The start/end timestamp refers to the start/end time of the narration, not the action itself.*
+
 | Column Name       | Type   | Example        | Description                                                    |
 | ----------------- | ------ |--------------- | -------------------------------------------------------------- |
 | `participant_id`  | string | `'P03'`        | ID of the participant.                                         |
 | `video_id`        | string | `'P03_01'`     | Video the segment is in.                                       |
-| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
-| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
+| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the narration.                 |
+| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the narration.                   |
 | `narration`       | string | `close fridge` | English description of the action provided by the participant. |
 
 ### EPIC_train_action_labels.csv
