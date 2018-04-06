@@ -1,0 +1,125 @@
+0,take,"['take', 'grab', 'pick', 'draw', 'get', 'grab-up', 'collect-from', 'take-up', 'grab-down', 'pull-down', 'fetch', 'pick-up']"
+1,put,"['put', 'pose', 'put-away', 'place-that', 'place-down', 'put', 'set-down', 'put-over', 'place-on', 'reture', 'put-on', 'place-away', 'swap', 'layer', 'position', 'put-down', 'put-back', 'place-back', 'return', 'pace', 'dose', 'put-up', 'leave', 'place', 'put-aside', 'lay', 'reposition', 'replace', 'put-onto']"
+2,open,"['open', 'unzip', 'open-up']"
+3,close,"['close', 'close-off', 'shut']"
+4,wash,"['wash', 'sponge', 'lather', 'wash-with', 'rinse', 'rinse-off', 'soap-up', 'wash-off', 'soap', 'rise', 'wash-up', 'clean-around', 'clean-off', 'clean-with', 'clean', 'clean-up', 'wipe-down', 'wipe-of', 'wipe', 'wipe-off']"
+5,cut,"['cut', 'chop', 'chop-off', 'cut-off', 'slice-into', 'slice-along', 'slice-off', 'stem', 'slice-up', 'cut-into', 'dice', 'half', 'halve', 'chop-up', 'snip', 'trim', 'slice']"
+6,mix,"['mix', 'beat', 'mix-around', 'stir-with', 'whisk', 'stir', 'blend', 'mix-in', 'stir-in']"
+7,pour,"['pour', 'pour-in', 'tip-in', 'pour-out', 'pour-on', 'pour-into', 'sieve']"
+8,throw,"['throw', 'throw-out', 'recycle', 'dispose-of', 'throw-over', 'throw-away', 'throw-in', 'bin', 'trow', 'toss']"
+9,move,"['move', 'transfer', 'move-around']"
+10,remove,"['remove', 'extract', 'take-off', 'remove-out', 'take-out', 'get-out', 'remove-inside', 'remove-from', 'pick-out']"
+11,dry,"['dry', 'dry-off', 'towel']"
+12,turn-on,"['turn-on', 'start', 'begin', 'ignite', 'switch-on', 'activate', 'water-on', 'play', 'start-to', 'restart', 'light']"
+13,turn,"['turn', 'rotate']"
+14,shake,"['shake', 'shake-off', 'shake-out']"
+15,turn-off,"['turn-off', 'switch-of', 'water-off', 'switch-off', 'switch-out', 'shut-off', 'turn-of']"
+16,peel,"['peel', 'skin-from', 'skin', 'peel-off', 'peel-back']"
+17,adjust,"['adjust', 'change', 'regulate']"
+18,empty,['empty']
+19,scoop,"['scoop', 'spoon-in', 'spoon', 'scoop-out', 'scoop-up']"
+20,check,"['check', 'ensure', 'test', 'look-in', 'watch', 'inspect', 'check-on']"
+21,squeeze,"['squeeze', 'squidge', 'squidge-into', 'squash', 'squish-into', 'wring-out', 'wring', 'squish', 'squeeze-into']"
+22,insert,"['insert', 'put-in', 'put-into', 'fit', 'place-in', 'put-inside']"
+23,press,"['press', 'push-down', 'collapse', 'compress', 'push', 'press-on']"
+24,fill,"['fill', 'fill-with', 'fill-up', 'stuff']"
+25,add,"['add', 'combine', 'add-to']"
+26,scrape,"['scrape', 'scrape-out', 'loose', 'scour', 'scrap', 'scrape-off']"
+27,sharpen,"['sharpen', 'thin']"
+28,wrap,"['wrap', 'top', 'lid', 'cover', 'seal', 'clamp', 'fasten', 'reseal', 'clip', 'wrap-up', 'tie']"
+29,roll,"['roll', 'roll-up']"
+30,sprinkle,"['sprinkle', 'sprinkle-on', 'drizzle', 'scatter', 'sprincle', 'crumble']"
+31,break,"['break', 'snap', 'crack', 'break-up']"
+32,flip,"['flip', 'overturn', 'turn-over']"
+33,hang,"['hang', 'drape', 'hang-up']"
+34,hold,['hold']
+35,sort,"['sort', 'rearrange', 'arrange', 'clear', 'tidy', 'line-up']"
+36,apply,"['apply', 'spread']"
+37,crush,"['crush', 'hit', 'grind', 'grate', 'mash', 'crush']"
+38,search,"['search', 'search-for', 'search-in', 'look-for', 'find', 'locate']"
+39,sample,"['sample', 'taste', 'smell', 'lick']"
+40,knead,['knead']
+41,set,"['set', 'set-up', 'set-out']"
+42,walk,"['walk', 'enter', 'enter-into', 'walk-into', 'walk-around', 'walk-to', 'walk-with']"
+43,divide,"['divide', 'split', 'detach', 'separate', 'distribute']"
+44,spray,"['spray', 'spay']"
+45,use,"['use', 'used-to', 'used']"
+46,fold,['fold']
+47,cook,"['cook', 'toast', 'fry-in', 'heat', 'fry', 'reduce', 'boil']"
+48,filter,"['filter', 'strain', 'drain', 'dump-out']"
+49,scrub,"['scrub', 'scrub-inside']"
+50,look,"['look', 'stare-at', 'see', 'read-on', 'read', 'look-at']"
+51,finish,"['finish', 'stop', 'end', 'do']"
+52,soak,"['soak', 'submerge', 'immerse']"
+53,brush,['brush']
+54,pull,"['pull', 'pull-out']"
+55,pat,"['pat', 'pat-into', 'dab', 'tap', 'tap-on', 'poke', 'pat-down']"
+56,form,"['form', 'shape', 'forge', 'make', 'shape-into']"
+57,measure,['measure']
+58,drink,"['drink', 'drink-from']"
+59,choose,"['choose', 'select']"
+60,serve,"['serve', 'plate-on', 'plate', 'dish', 'plate-up']"
+61,drop,"['drop', 'drop-on']"
+62,wear,['wear']
+63,rip,"['rip', 'tear', 'tear-off', 'tear-down']"
+64,tip,"['tip', 'tip-over', 'tip-out']"
+65,turn-down,['turn-down']
+66,gather,"['gather', 'collect']"
+67,eat,"['eat', 'chew-on', 'bite']"
+68,stack,"['stack', 'stack-up']"
+69,store,['store']
+70,switch,['switch']
+71,increase,"['increase', 'switch-up', 'turn-up']"
+72,carry,"['carry', 'have', 'bring']"
+73,lift,"['lift', 'raise', 'tilt', 'lift-up']"
+74,twist,"['twist', 'screw', 'screw-in', 'screw-on', 'tighten']"
+75,sweep,['sweep']
+76,rub,"['rub', 'rub-off']"
+77,unwrap,"['unwrap', 'unpack', 'unseal']"
+78,stab,['stab']
+79,attach,"['attach', 'connect', 'plug', 'assemble', 'plug-into', 'plug-in']"
+80,stretch,"['stretch', 'unfold']"
+81,lower,['lower']
+82,prepare,['prepare']
+83,unscrew,"['unscrew', 'untwist']"
+84,season,"['season', 'sweeten', 'pepper', 'salt']"
+85,video,['video']
+86,tap-off,['tap-off']
+87,set-off,['set-off']
+88,squirt,['squirt']
+89,load,['load']
+90,unroll,"['unroll', 'roll-out']"
+91,water,"['water', 'wet']"
+92,do,['do']
+93,flatten,"['flatten', 'flatten-with']"
+94,uncover,"['uncover', 'lid-off']"
+95,slide,"['slide', 'slide-out']"
+96,unplug,['unplug']
+97,level,['level']
+98,tear-out,['tear-out']
+99,feel,"['feel', 'touch']"
+100,fix,['fix']
+101,spill,['spill']
+102,pack,['pack']
+103,bake,['bake']
+104,blow,"['blow', 'blow-out']"
+105,sit-on,['sit-on']
+106,count,['count']
+107,dip,['dip']
+108,cool,['cool']
+109,flush,['flush']
+110,knife,['knife']
+111,fork,['fork']
+112,swirl,['swirl']
+113,stick,['stick']
+114,pet-down,['pet-down']
+115,realize,['realize']
+116,weigh,['weigh']
+117,defoliate,['defoliate']
+118,deseed,['deseed']
+119,tessellate,['tessellate']
+120,unfreeze,['unfreeze']
+121,decide-if,['decide-if']
+122,let-out,['let-out']
+123,save,['save']
+124,reverse,['reverse']
