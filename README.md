@@ -68,7 +68,6 @@ Initially we are only releasing the full ground truth for the training set in or
 We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) for the videos and rgb/flow frames.
 
 We provide html and pdf alternatives to this README which are auto-generated.
-[![CircleCI](https://circleci.com/gh/epic-kitchens/annotations/tree/master.svg?style=svg)](https://circleci.com/gh/epic-kitchens/annotations/tree/master)
 
 ## Files Structure
 ### EPIC_train_action_narrations.csv
