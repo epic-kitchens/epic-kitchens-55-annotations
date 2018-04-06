@@ -181,6 +181,8 @@ variable FPS, this can be achieved in a single step with FFmpeg:
 ffmpeg -i 'P##_**.MP4' -vf 'scale=-2:256' -q:v 4 -r 60 'P##_**/frame_%010d.jpg'
 ```
 
+where `##` is the Participant ID and `**` is the video ID.
+
 Optical flow was extracted using a fork of
 [`gpu_flow`](https://github.com/feichtenhofer/gpu_flow) made 
 [available on github](https://github.com/dl-container-registry/furnari-flow).
