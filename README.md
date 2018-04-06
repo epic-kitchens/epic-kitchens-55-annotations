@@ -54,14 +54,14 @@ Initially we are only releasing the full ground truth for the training set in or
 
 * `README.md (this file)`
 * [`license.txt`](#license)
-* [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) [Info](#epic_train_action_narrationscsv).
-* [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) [Info](#epic_train_action_labelscsv).
-* [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.csv) [Info](#epic_train_action_labelscsv).
-* [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) [Info](#epic_train_object_labelscsv).
-* [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps) [Info](#epic_test_s1_timestampscsv).
-* [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps) [Info](#epic_test_s2_timestampscsv).
-* [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) [Info](#epic_verb_classescsv).
-* [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) [Info](#epic_noun_classescsv).
+* [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv)).
+* [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)).
+* [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)).
+* [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv)).
+* [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps) ([Info](#epic_test_s1_timestampscsv)).
+* [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps) ([Info](#epic_test_s2_timestampscsv)).
+* [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv)).
+* [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv)).
 
 We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) for the videos and rgb/flow frames.
 
@@ -89,8 +89,8 @@ CSV file containing 14 columns:
 | `narration`         | string                       | `'close fridge'`             | English description of the action provided by the participant.                                                        |
 | `start_timestamp`   | string                       | `'00:23:43.847'`             | Start time in `HH:mm:ss.SSS` of the action.                                                                           |
 | `stop_timestamp`    | string                       | `'00:23:47.212'`             | End time in `HH:mm:ss.SSS` of the action.                                                                             |
-| `start_frame`       | int                          | `85430`                      | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information).  |
-| `stop_frame`        | int                          | `85643`                      | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information).   |
+| `start_frame`       | int                          | `85430`                      | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information)). |
+| `stop_frame`        | int                          | `85643`                      | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information)).  |
 | `participant_id`    | string                       | `'P03'`                      | ID of the participant.                                                                                                |
 | `verb`              | string                       | `'close'`                    | Parsed verb from the narration.                                                                                       |
 | `noun`              | string                       | `'fridge'`                   | First parsed noun from the narration.                                                                                 |
