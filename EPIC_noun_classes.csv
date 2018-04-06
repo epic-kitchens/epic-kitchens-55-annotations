@@ -1,3 +1,4 @@
+noun_id,class_key,nouns
 0,Nothing,['Nothing']
 1,pan,"['pan', 'pan:sauce', 'pan:frying', 'pan:cake', 'saucepan', 'saucepan:empty', 'saucepan:small', 'wok', 'wok:scour', 'pan:content']"
 2,pan:dust,"['pan:dust', 'dustpan']"

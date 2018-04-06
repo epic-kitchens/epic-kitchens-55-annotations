@@ -1,3 +1,4 @@
+verb_id,class_key,verbs
 0,take,"['take', 'grab', 'pick', 'draw', 'get', 'grab-up', 'collect-from', 'take-up', 'grab-down', 'pull-down', 'fetch', 'pick-up']"
 1,put,"['put', 'pose', 'put-away', 'place-that', 'place-down', 'put', 'set-down', 'put-over', 'place-on', 'reture', 'put-on', 'place-away', 'swap', 'layer', 'position', 'put-down', 'put-back', 'place-back', 'return', 'pace', 'dose', 'put-up', 'leave', 'place', 'put-aside', 'lay', 'reposition', 'replace', 'put-onto']"
 2,open,"['open', 'unzip', 'open-up']"
