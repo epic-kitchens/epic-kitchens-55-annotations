@@ -49,5 +49,5 @@ jobs:
 
             git add README.{html,pdf}
             prev="$(git rev-parse --short HEAD)"
-            git commit -m "[CI] Generate README files from $prev"
+            git commit -m "[skip ci] Generate README files from $prev"
             git push
