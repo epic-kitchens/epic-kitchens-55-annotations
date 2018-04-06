@@ -50,7 +50,6 @@ Initially we are only releasing the full ground truth for the training set in or
 
 
 ### Important Files
-(click links to see information of each file)
 
 * `README.md (this file)`
 * [`license.txt`](#license)
