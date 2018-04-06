@@ -53,6 +53,8 @@ Initially we are only releasing the full ground truth for the training set in or
 ### Important Files
 
 * `README.md (this file)`
+* `README.html`
+* `README.pdf`
 * [`license.txt`](#license)
 * [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv)).
 * [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)).
@@ -64,6 +66,9 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv)).
 
 We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) for the videos and rgb/flow frames.
+
+We provide html and pdf alternatives to this README which are auto-generated.
+[![CircleCI](https://circleci.com/gh/epic-kitchens/annotations/tree/master.svg?style=svg)](https://circleci.com/gh/epic-kitchens/annotations/tree/master)
 
 ## Files Structure
 ### EPIC_train_action_narrations.csv
