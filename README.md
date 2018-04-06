@@ -44,7 +44,8 @@ We provide ground truth for action segments and object bounding boxes.
 The dataset is comprised of three splits with the corresponding ground truth:
 
 * Training set - Full ground truth.
-* Test set - Timestamp and start/end times only.
+* Seen Kitchens (S1) Test set - Timestamp and start/end times only.
+* Unseen Kitchens (S2) Test set - Timestamp and start/end times only.
 
 Initially we are only releasing the full ground truth for the training set in order to run action and object challenges.
 
