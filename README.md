@@ -60,6 +60,8 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_train_object_labels.csv`](#epic_train_object_labelscsv)
 * [`EPIC_test_s1_timestamps.csv`](#epic_test_s1_timestampscsv)
 * [`EPIC_test_s2_timestamps.csv`](#epic_test_s2_timestampscsv)
+* [`EPIC_verb_classes.csv`](#epic_verb_classescsv)
+* [`EPIC_noun_classes.csv`](#epic_noun_classescsv)
 
 We direct the reader to [RDSF]() for the videos and rgb/flow frames.
 
@@ -131,6 +133,26 @@ CSV file containing 4 columns:
 | `video_id`        | string | `'P03_01'`     | Video the segment is in.                                       |
 | `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
 | `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
+
+
+### EPIC_verb_classes.csv
+CSV file containing 3 columns:
+
+| Column Name | Type                       | Example                    | Description                                    |
+| ----------- | -------------------------- |--------------------------- | ---------------------------------------------- |
+| `verb_id`   | int                        | `0`                        | ID of the verb class.                          |
+| `class_key` | string                     | `take`                     | Key of the verb class.                         |
+| `verbs`     | list of string (1 or more) | `[close, close-off, shut]` | All verbs within the class (includes the key). |
+
+
+### EPIC_noun_classes.csv
+CSV file containing 3 columns:
+
+| Column Name | Type                       | Example                    | Description                                    |
+| ----------- | -------------------------- |--------------------------- | ---------------------------------------------- |
+| `noun_id`   | int                        | `0`                        | ID of the noun class.                          |
+| `class_key` | string                     | `take`                     | Key of the noun class.                         |
+| `nouns`     | list of string (1 or more) | `[close, close-off, shut]` | All nouns within the class (includes the key). |
 
 
 
