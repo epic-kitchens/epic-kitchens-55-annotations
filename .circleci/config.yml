@@ -1,0 +1,53 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
+      - image: circleci/python:3.6.1
+      
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
+
+    working_directory: ~/repo
+
+    steps:
+
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "e6:81:23:60:ff:5a:ad:8b:69:e5:d6:39:97:f8:3c:e3"
+
+      - run:
+          name: install dependencies
+          command: |
+            sudo apt-get update; sudo apt-get install pandoc
+            sudo apt-get --no-install-recommends install texlive-{base,extra-utils,generic-recommended,fonts-recommended,font-utils,latex-base,latex-recommended,latex-extra,math-extra,pstricks} lmodern
+
+      - run:
+          name: generate html and pdf
+          command: |
+            pandoc -f markdown README.md -o README.pdf
+            pandoc -f markdown README.md -o README.html
+      
+      - run:
+          name: upload generated files
+          command: |
+            # Setting up ssh agent to add read/write deploy key as add_ssh_key doesn't work :(
+            eval $(ssh-agent)
+            ssh-add ~/.ssh/id_rsa_e6812360ff5aad8b69e5d63997f83ce3
+
+            git config --global user.email "circleci@example.com"
+            git config --global user.name "Circleci"
+            git config --global push.default simple
+
+            git add README.{html,pdf}
+            prev="$(git rev-parse --short HEAD)"
+            git commit -m "[CI] Generate README files from $prev"
+            git push
