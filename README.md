@@ -63,7 +63,7 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) [Info](#epic_verb_classescsv).
 * [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) [Info](#epic_noun_classescsv).
 
-We direct the reader to [RDSF]() for the videos and rgb/flow frames.
+We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) for the videos and rgb/flow frames.
 
 ## Files Structure
 ### EPIC_train_action_narrations.csv
