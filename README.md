@@ -140,19 +140,22 @@ CSV file containing 3 columns:
 
 | Column Name | Type                       | Example                    | Description                                    |
 | ----------- | -------------------------- |--------------------------- | ---------------------------------------------- |
-| `verb_id`   | int                        | `0`                        | ID of the verb class.                          |
-| `class_key` | string                     | `take`                     | Key of the verb class.                         |
+| `verb_id`   | int                        | `3`                        | ID of the verb class.                          |
+| `class_key` | string                     | `close`                    | Key of the verb class.                         |
 | `verbs`     | list of string (1 or more) | `[close, close-off, shut]` | All verbs within the class (includes the key). |
 
 
 ### EPIC_noun_classes.csv
 CSV file containing 3 columns:
 
-| Column Name | Type                       | Example                    | Description                                    |
-| ----------- | -------------------------- |--------------------------- | ---------------------------------------------- |
-| `noun_id`   | int                        | `0`                        | ID of the noun class.                          |
-| `class_key` | string                     | `take`                     | Key of the noun class.                         |
-| `nouns`     | list of string (1 or more) | `[close, close-off, shut]` | All nouns within the class (includes the key). |
+*Note: a colon represents a compound noun with the more generic noun first. So pan:dust should be
+read as dust pan.*
+
+| Column Name | Type                       | Example               | Description                                    |
+| ----------- | -------------------------- |---------------------- | ---------------------------------------------- |
+| `noun_id`   | int                        | `2`                   | ID of the noun class.                          |
+| `class_key` | string                     | `pan:dust`            | Key of the noun class.                         |
+| `nouns`     | list of string (1 or more) | `[pan:dust, dustpan]` | All nouns within the class (includes the key). |
 
 
 
