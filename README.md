@@ -116,7 +116,7 @@ CSV file containing 6 columns:
 | `noun_class`     | int                         | `20`                       | Integer value representing the class in noun-classes.csv.                     |
 | `noun`           | string                      | `bag`                      | Original string name for the object.                                          |
 | `participant_id` | string                      | `P01`                      | ID of participant.                                                            |
-| `video_id`       | string                      | `P01_0"`                   | Video the object was annotated in.                                            |
+| `video_id`       | string                      | `P01_01`                   | Video the object was annotated in.                                            |
 | `frame`          | int                         | `056581`                   | Frame number of the annotated object.                                         |
 | `bounding_boxes` | list of 4-tuple (0 or more) | `"[(76, 1260, 462, 186)]"` | Annotated boxes with format `(<top:int>,<left:int>,<width:int>,<height:int>)`.|
 
