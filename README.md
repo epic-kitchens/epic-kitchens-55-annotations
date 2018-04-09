@@ -26,7 +26,7 @@ Michael Wray (1)
 ## Citing
 When using the dataset, kindly reference:
 
-> DimaDamen, Hazel Doughty, Sanja Fidler, Giovanni Maria Farinella, Antonino Furnari, Evangelos Kazakos, Davide Moltisanti, Jonathan Munro, Toby Perrett, Will Price, Michael Wray (2018). Scaling Egocentric Vision: The EPIC-KITCHENS Dataset. 
+> Dima Damen, Hazel Doughty, Sanja Fidler, Giovanni Maria Farinella, Antonino Furnari, Evangelos Kazakos, Davide Moltisanti, Jonathan Munro, Toby Perrett, Will Price, Michael Wray (2018). Scaling Egocentric Vision: The EPIC-KITCHENS Dataset. 
 
 (Check publication [here](https://epic-kitchens.github.io))
 
