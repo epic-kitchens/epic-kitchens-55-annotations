@@ -58,12 +58,12 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`license.txt`](#license)
 * [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv)).
 * [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)).
-* [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)).
+* [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.pkl) ([Info](#epic_train_action_labelscsv)).
 * [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv)).
-* [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps) ([Info](#epic_test_s1_timestampscsv)).
-* [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps) ([Info](#epic_test_s1_timestampscsv)).
-* [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps) ([Info](#epic_test_s2_timestampscsv)).
-* [`EPIC_test_s2_timestamps.pkl`](EPIC_test_s1_timestamps) ([Info](#epic_test_s2_timestampscsv)).
+* [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv)).
+* [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s1_timestampscsv)).
+* [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s2_timestampscsv)).
+* [`EPIC_test_s2_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s2_timestampscsv)).
 * [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv)).
 * [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv)).
 
