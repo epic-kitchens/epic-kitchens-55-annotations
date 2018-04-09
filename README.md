@@ -77,8 +77,8 @@ CSV file containing 5 columns:
 
 | Column Name       | Type   | Example        | Description                                                    |
 | ----------------- | ------ |--------------- | -------------------------------------------------------------- |
-| `participant_id`  | string | `'P03'`        | ID of the participant.                                         |
-| `video_id`        | string | `'P03_01'`     | Video the segment is in.                                       |
+| `participant_id`  | string | `"P03"`        | ID of the participant.                                         |
+| `video_id`        | string | `"P03_01"`     | Video the segment is in.                                       |
 | `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the narration.                 |
 | `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the narration.                   |
 | `narration`       | string | `close fridge` | English description of the action provided by the participant. |
@@ -89,18 +89,18 @@ CSV file containing 14 columns:
 | Column Name         | Type                         | Example          | Description                                                                                                           |
 | ------------------- | ---------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `uid`               | int                          | `6374`           | Unique ID of the segment.                                                                                             |
-| `video_id`          | string                       | `'P03_01'`       | Video the segment is in.                                                                                              |
-| `narration`         | string                       | `'close fridge'` | English description of the action provided by the participant.                                                        |
-| `start_timestamp`   | string                       | `'00:23:43.847'` | Start time in `HH:mm:ss.SSS` of the action.                                                                           |
-| `stop_timestamp`    | string                       | `'00:23:47.212'` | End time in `HH:mm:ss.SSS` of the action.                                                                             |
+| `video_id`          | string                       | `"P03_01"`       | Video the segment is in.                                                                                              |
+| `narration`         | string                       | `"close fridge"` | English description of the action provided by the participant.                                                        |
+| `start_timestamp`   | string                       | `"00:23:43.847"` | Start time in `HH:mm:ss.SSS` of the action.                                                                           |
+| `stop_timestamp`    | string                       | `"00:23:47.212"` | End time in `HH:mm:ss.SSS` of the action.                                                                             |
 | `start_frame`       | int                          | `85430`          | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information)). |
 | `stop_frame`        | int                          | `85643`          | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information)).  |
-| `participant_id`    | string                       | `'P03'`          | ID of the participant.                                                                                                |
-| `verb`              | string                       | `'close'`        | Parsed verb from the narration.                                                                                       |
-| `noun`              | string                       | `'fridge'`       | First parsed noun from the narration.                                                                                 |
+| `participant_id`    | string                       | `"P03"`          | ID of the participant.                                                                                                |
+| `verb`              | string                       | `"close"`        | Parsed verb from the narration.                                                                                       |
+| `noun`              | string                       | `"fridge"`       | First parsed noun from the narration.                                                                                 |
 | `verb_class`        | int                          | `3`              | Numeric ID of the parsed verb's class.                                                                                |
 | `noun_class`        | int                          | `10`             | Numeric ID of the parsed noun's class.                                                                                |
-| `all_nouns`         | list of string (1 or more)   | `['fridge']`     | List of all parsed nouns from the narration.                                                                          |
+| `all_nouns`         | list of string (1 or more)   | `["fridge"]`     | List of all parsed nouns from the narration.                                                                          |
 | `all_nouns_class`   | list of int    (1 or more)   | `[10]`           | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                             |
 
 Please note we have included a python pickle file for ease of use. This includes
@@ -112,9 +112,9 @@ CSV file containing 6 columns:
 | Column Name      | Type                        | Example                    | Description                                                                   |
 |------------------|-----------------------------| -------------------------- | ------------------------------------------------------------------------------|
 | `noun_class`     | int                         | `20`                       | Integer value representing the class in noun-classes.csv.                     |
-| `noun`           | string                      | `'bag'`                    | Original string name for the object.                                          |
-| `participant_id` | string                      | `'P01'`                    | ID of participant.                                                            |
-| `video_id`       | string                      | `'P01_01'`                 | Video the object was annotated in.                                            |
+| `noun`           | string                      | `"bag"`                    | Original string name for the object.                                          |
+| `participant_id` | string                      | `"P01"`                    | ID of participant.                                                            |
+| `video_id`       | string                      | `"P01_01"`                 | Video the object was annotated in.                                            |
 | `frame`          | int                         | `056581`                   | Frame number of the annotated object.                                         |
 | `bounding_boxes` | list of 4-tuple (0 or more) | `"[(76, 1260, 462, 186)]"` | Annotated boxes with format `(<top:int>,<left:int>,<width:int>,<height:int>)`.|
 
@@ -123,8 +123,8 @@ CSV file containing 4 columns:
 
 | Column Name       | Type   | Example        | Description                                                    |
 | ----------------- | ------ |--------------- | -------------------------------------------------------------- |
-| `participant_id`  | string | `'P03'`        | ID of the participant.                                         |
-| `video_id`        | string | `'P03_01'`     | Video the segment is in.                                       |
+| `participant_id`  | string | `"P03"`        | ID of the participant.                                         |
+| `video_id`        | string | `"P03_01"`     | Video the segment is in.                                       |
 | `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
 | `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
 
@@ -133,8 +133,8 @@ CSV file containing 4 columns:
 
 | Column Name       | Type   | Example        | Description                                                    |
 | ----------------- | ------ |--------------- | -------------------------------------------------------------- |
-| `participant_id`  | string | `'P03'`        | ID of the participant.                                         |
-| `video_id`        | string | `'P03_01'`     | Video the segment is in.                                       |
+| `participant_id`  | string | `"P03"`        | ID of the participant.                                         |
+| `video_id`        | string | `"P03_01"`     | Video the segment is in.                                       |
 | `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
 | `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
 
@@ -182,7 +182,7 @@ extract frames we suggest you resample at 60 FPS to mitigate issues with
 variable FPS, this can be achieved in a single step with FFmpeg: 
 
 ```
-ffmpeg -i 'P##_**.MP4' -vf 'scale=-2:256' -q:v 4 -r 60 'P##_**/frame_%010d.jpg'
+ffmpeg -i "P##_**.MP4" -vf "scale=-2:256" -q:v 4 -r 60 "P##_**/frame_%010d.jpg"
 ```
 
 where `##` is the Participant ID and `**` is the video ID.
