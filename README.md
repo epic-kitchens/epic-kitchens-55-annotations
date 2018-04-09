@@ -176,6 +176,21 @@ CSV file containing 3 columns:
 | `class_key` | string                     | `close`                            | Key of the verb class.                         |
 | `verbs`     | list of string (1 or more) | `"['close', 'close-off', 'shut']"` | All verbs within the class (includes the key). |
 
+## File Downloads
+
+Due to the size of the dataset we provide three scripts for downloading the
+[videos](https://github.com/epic-kitchens/download-scripts/blob/master/download_videos.sh), 
+[frames](https://github.com/epic-kitchens/download-scripts/blob/master/download_frames_rgb_flow.sh)
+or [object annotation images](https://github.com/epic-kitchens/download-scripts/blob/master/download_object_detection_images.sh) separately.
+
+*Note: These scripts will work for Linux and Mac. For Windows users a bash 
+installation should work.*
+
+These scripts replicate the folder structure of the dataset release, found 
+[here](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d).
+
+If you wish to download part of the dataset instructions can be found
+[here](https://github.com/epic-kitchens/download-scripts).
 
 
 ## Video Information
@@ -207,21 +222,7 @@ Optical flow was extracted using a fork of
 [available on github](https://github.com/dl-container-registry/furnari-flow).
  We set the parameters: stride = 2, dilation = 3, bound = 25 and size = 256.
 
-## Video Downloads
 
-Due to the size of the dataset we provide three scripts for downloading the
-[videos](https://github.com/epic-kitchens/download-scripts/blob/master/download_videos.sh), 
-[frames](https://github.com/epic-kitchens/download-scripts/blob/master/download_frames_rgb_flow.sh)
-or [object annotation images](https://github.com/epic-kitchens/download-scripts/blob/master/download_object_detection_images.sh) separately.
-
-*Note: These scripts will work for Linux and Mac. For Windows users a bash 
-installation should work.*
-
-These scripts replicate the folder structure of the dataset release, found 
-[here](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d).
-
-If you wish to download part of the dataset instructions can be found
-[here](https://github.com/epic-kitchens/download-scripts).
 
 ## License
 All files in this dataset are copyright by us and published under the 
