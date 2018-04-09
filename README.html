@@ -432,6 +432,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </tr>
 </tbody>
 </table>
+<h2 id="file-downloads">File Downloads</h2>
+<p>Due to the size of the dataset we provide three scripts for downloading the <a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_videos.sh">videos</a>, <a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_frames_rgb_flow.sh">frames</a> or <a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_object_detection_images.sh">object annotation images</a> separately.</p>
+<p><em>Note: These scripts will work for Linux and Mac. For Windows users a bash installation should work.</em></p>
+<p>These scripts replicate the folder structure of the dataset release, found <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">here</a>.</p>
+<p>If you wish to download part of the dataset instructions can be found <a href="https://github.com/epic-kitchens/download-scripts">here</a>.</p>
 <h2 id="video-information">Video Information</h2>
 <p>Videos are recorded in 1080p at 59.94 FPS on a GoPro Hero 5 with linear field of view. There are a minority of videos which were shot at different resolutions, field of views, or FPS due to participant error or camera. These videos identified using <code>ffprobe</code> are:</p>
 <ul>
@@ -445,11 +450,6 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <pre><code>ffmpeg -i &quot;P##_**.MP4&quot; -vf &quot;scale=-2:256&quot; -q:v 4 -r 60 &quot;P##_**/frame_%010d.jpg&quot;</code></pre>
 <p>where <code>##</code> is the Participant ID and <code>**</code> is the video ID.</p>
 <p>Optical flow was extracted using a fork of <a href="https://github.com/feichtenhofer/gpu_flow"><code>gpu_flow</code></a> made <a href="https://github.com/dl-container-registry/furnari-flow">available on github</a>. We set the parameters: stride = 2, dilation = 3, bound = 25 and size = 256.</p>
-<h2 id="video-downloads">Video Downloads</h2>
-<p>Due to the size of the dataset we provide three scripts for downloading the <a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_videos.sh">videos</a>, <a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_frames_rgb_flow.sh">frames</a> or <a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_object_detection_images.sh">object annotation images</a> separately.</p>
-<p><em>Note: These scripts will work for Linux and Mac. For Windows users a bash installation should work.</em></p>
-<p>These scripts replicate the folder structure of the dataset release, found <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">here</a>.</p>
-<p>If you wish to download part of the dataset instructions can be found <a href="https://github.com/epic-kitchens/download-scripts">here</a>.</p>
 <h2 id="license">License</h2>
 <p>All files in this dataset are copyright by us and published under the Creative Commons Attribution-NonCommerial 4.0 International License, found <a href="https://creativecommons.org/licenses/by-nc/4.0/">here</a>. This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. You may not use the material for commercial purposes.</p>
 <h2 id="changelog">Changelog</h2>
