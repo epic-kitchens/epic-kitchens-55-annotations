@@ -44,8 +44,8 @@ We provide ground truth for action segments and object bounding boxes.
 The dataset is comprised of three splits with the corresponding ground truth:
 
 * Training set - Full ground truth.
-* Seen Kitchens (S1) Test set - Timestamp and start/end times only.
-* Unseen Kitchens (S2) Test set - Timestamp and start/end times only.
+* Seen Kitchens (S1) Test set - Start/end times only.
+* Unseen Kitchens (S2) Test set - Start/end times only.
 
 Initially we are only releasing the full ground truth for the training set in order to run action and object challenges.
 
@@ -119,24 +119,30 @@ CSV file containing 6 columns:
 | `bounding_boxes` | list of 4-tuple (0 or more) | `"[(76, 1260, 462, 186)]"` | Annotated boxes with format `(<top:int>,<left:int>,<width:int>,<height:int>)`.|
 
 ### EPIC_test_s1_timestamps.csv
-CSV file containing 4 columns:
+CSV file containing 7 columns:
 
-| Column Name       | Type   | Example        | Description                                                    |
-| ----------------- | ------ |--------------- | -------------------------------------------------------------- |
-| `participant_id`  | string | `P03`          | ID of the participant.                                         |
-| `video_id`        | string | `P03_01`       | Video the segment is in.                                       |
-| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
-| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
+| Column Name       | Type   | Example        | Description                                                                                                           |
+| ----------------- | ------ |--------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `uid`             | int    | `1924`         | Unique ID of the segment.                                                                                             |
+| `participant_id`  | string | `P01`          | ID of the participant.                                                                                                |
+| `video_id`        | string | `P01_11`       | Video the segment is in.                                                                                              |
+| `start_timestamp` | string | `00:00:00.000` | Start time in `HH:mm:ss.SSS` of the action.                                                                           |
+| `stop_timestamp`  | string | `00:00:01.890` | End time in `HH:mm:ss.SSS` of the action.                                                                             |
+| `start_frame`     | int    | `1`            | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information)). |
+| `stop_frame`      | int    | `93`           | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information)).  |
 
 ### EPIC_test_s2_timestamps.csv
-CSV file containing 4 columns:
+CSV file containing 7 columns:
 
-| Column Name       | Type   | Example        | Description                                                    |
-| ----------------- | ------ |--------------- | -------------------------------------------------------------- |
-| `participant_id`  | string | `P03`          | ID of the participant.                                         |
-| `video_id`        | string | `P03_01`       | Video the segment is in.                                       |
-| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the action.                    |
-| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the action.                      |
+| Column Name       | Type   | Example        | Description                                                                                                           |
+| ----------------- | ------ |--------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `uid`             | int    | `15582`        | Unique ID of the segment.                                                                                             |
+| `participant_id`  | string | `P09`          | ID of the participant.                                                                                                |
+| `video_id`        | string | `P09_01`       | Video the segment is in.                                                                                              |
+| `start_timestamp` | string | `00:00:01.970` | Start time in `HH:mm:ss.SSS` of the action.                                                                           |
+| `stop_timestamp`  | string | `00:00:03.090` | End time in `HH:mm:ss.SSS` of the action.                                                                             |
+| `start_frame`     | int    | `118`          | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information)). |
+| `stop_frame`      | int    | `185`          | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information)).  |
 
 
 ### EPIC_verb_classes.csv
