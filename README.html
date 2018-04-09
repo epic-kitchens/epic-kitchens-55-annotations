@@ -68,13 +68,13 @@
 <tr class="odd">
 <td align="left"><code>participant_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P03'</code></td>
+<td align="left"><code>&quot;P03&quot;</code></td>
 <td align="left">ID of the participant.</td>
 </tr>
 <tr class="even">
 <td align="left"><code>video_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P03_01'</code></td>
+<td align="left"><code>&quot;P03_01&quot;</code></td>
 <td align="left">Video the segment is in.</td>
 </tr>
 <tr class="odd">
@@ -118,25 +118,25 @@
 <tr class="even">
 <td align="left"><code>video_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P03_01'</code></td>
+<td align="left"><code>&quot;P03_01&quot;</code></td>
 <td align="left">Video the segment is in.</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>narration</code></td>
 <td align="left">string</td>
-<td align="left"><code>'close fridge'</code></td>
+<td align="left"><code>&quot;close fridge&quot;</code></td>
 <td align="left">English description of the action provided by the participant.</td>
 </tr>
 <tr class="even">
 <td align="left"><code>start_timestamp</code></td>
 <td align="left">string</td>
-<td align="left"><code>'00:23:43.847'</code></td>
+<td align="left"><code>&quot;00:23:43.847&quot;</code></td>
 <td align="left">Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>stop_timestamp</code></td>
 <td align="left">string</td>
-<td align="left"><code>'00:23:47.212'</code></td>
+<td align="left"><code>&quot;00:23:47.212&quot;</code></td>
 <td align="left">End time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="even">
@@ -154,19 +154,19 @@
 <tr class="even">
 <td align="left"><code>participant_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P03'</code></td>
+<td align="left"><code>&quot;P03&quot;</code></td>
 <td align="left">ID of the participant.</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>verb</code></td>
 <td align="left">string</td>
-<td align="left"><code>'close'</code></td>
+<td align="left"><code>&quot;close&quot;</code></td>
 <td align="left">Parsed verb from the narration.</td>
 </tr>
 <tr class="even">
 <td align="left"><code>noun</code></td>
 <td align="left">string</td>
-<td align="left"><code>'fridge'</code></td>
+<td align="left"><code>&quot;fridge&quot;</code></td>
 <td align="left">First parsed noun from the narration.</td>
 </tr>
 <tr class="odd">
@@ -184,7 +184,7 @@
 <tr class="odd">
 <td align="left"><code>all_nouns</code></td>
 <td align="left">list of string (1 or more)</td>
-<td align="left"><code>['fridge']</code></td>
+<td align="left"><code>[&quot;fridge&quot;]</code></td>
 <td align="left">List of all parsed nouns from the narration.</td>
 </tr>
 <tr class="even">
@@ -217,19 +217,19 @@
 <tr class="even">
 <td align="left"><code>noun</code></td>
 <td align="left">string</td>
-<td align="left"><code>'bag'</code></td>
+<td align="left"><code>&quot;bag&quot;</code></td>
 <td align="left">Original string name for the object.</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>participant_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P01'</code></td>
+<td align="left"><code>&quot;P01&quot;</code></td>
 <td align="left">ID of participant.</td>
 </tr>
 <tr class="even">
 <td align="left"><code>video_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P01_01'</code></td>
+<td align="left"><code>&quot;P01_01&quot;</code></td>
 <td align="left">Video the object was annotated in.</td>
 </tr>
 <tr class="odd">
@@ -261,13 +261,13 @@
 <tr class="odd">
 <td align="left"><code>participant_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P03'</code></td>
+<td align="left"><code>&quot;P03&quot;</code></td>
 <td align="left">ID of the participant.</td>
 </tr>
 <tr class="even">
 <td align="left"><code>video_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P03_01'</code></td>
+<td align="left"><code>&quot;P03_01&quot;</code></td>
 <td align="left">Video the segment is in.</td>
 </tr>
 <tr class="odd">
@@ -299,13 +299,13 @@
 <tr class="odd">
 <td align="left"><code>participant_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P03'</code></td>
+<td align="left"><code>&quot;P03&quot;</code></td>
 <td align="left">ID of the participant.</td>
 </tr>
 <tr class="even">
 <td align="left"><code>video_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>'P03_01'</code></td>
+<td align="left"><code>&quot;P03_01&quot;</code></td>
 <td align="left">Video the segment is in.</td>
 </tr>
 <tr class="odd">
@@ -397,7 +397,7 @@
 <li>90 FPS: <code>P18_09</code></li>
 </ul>
 <p>The GoPro Hero 5 was also set to drop the framerate in low light conditions to preserve exposure leading to variable FPS in some videos. If you wish to extract frames we suggest you resample at 60 FPS to mitigate issues with variable FPS, this can be achieved in a single step with FFmpeg:</p>
-<pre><code>ffmpeg -i &#39;P##_**.MP4&#39; -vf &#39;scale=-2:256&#39; -q:v 4 -r 60 &#39;P##_**/frame_%010d.jpg&#39;</code></pre>
+<pre><code>ffmpeg -i &quot;P##_**.MP4&quot; -vf &quot;scale=-2:256&quot; -q:v 4 -r 60 &quot;P##_**/frame_%010d.jpg&quot;</code></pre>
 <p>where <code>##</code> is the Participant ID and <code>**</code> is the video ID.</p>
 <p>Optical flow was extracted using a fork of <a href="https://github.com/feichtenhofer/gpu_flow"><code>gpu_flow</code></a> made <a href="https://github.com/dl-container-registry/furnari-flow">available on github</a>. We set the parameters: stride = 2, dilation = 3, bound = 25 and size = 256.</p>
 <p>Please go <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">here</a> if you wish to download the videos/frames.</p>
