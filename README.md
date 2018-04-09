@@ -20,7 +20,7 @@ Michael Wray (1)
 * (2 University of Toronto)
 * (3 University of Catania)
 
-**Contact:** uob-epic-kitchens2018@bristol.ac.uk
+**Contact:** [uob-epic-kitchens2018@bristol.ac.uk](mailto:uob-epic-kitchens2018@bristol.ac.uk)
 
 
 ## Citing
