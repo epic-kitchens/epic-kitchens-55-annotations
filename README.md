@@ -207,7 +207,7 @@ Optical flow was extracted using a fork of
 [available on github](https://github.com/dl-container-registry/furnari-flow).
  We set the parameters: stride = 2, dilation = 3, bound = 25 and size = 256.
 
-##Video Downloads
+## Video Downloads
 
 Due to the size of the dataset we provide three scripts for downloading the
 [videos](https://github.com/epic-kitchens/download-scripts/blob/master/download_videos.sh), 
