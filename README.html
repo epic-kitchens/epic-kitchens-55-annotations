@@ -30,8 +30,8 @@
 <p>The dataset is comprised of three splits with the corresponding ground truth:</p>
 <ul>
 <li>Training set - Full ground truth.</li>
-<li>Seen Kitchens (S1) Test set - Timestamp and start/end times only.</li>
-<li>Unseen Kitchens (S2) Test set - Timestamp and start/end times only.</li>
+<li>Seen Kitchens (S1) Test set - Start/end times only.</li>
+<li>Unseen Kitchens (S2) Test set - Start/end times only.</li>
 </ul>
 <p>Initially we are only releasing the full ground truth for the training set in order to run action and object challenges.</p>
 <h3 id="important-files">Important Files</h3>
@@ -247,7 +247,7 @@
 </tbody>
 </table>
 <h3 id="epic_test_s1_timestamps.csv">EPIC_test_s1_timestamps.csv</h3>
-<p>CSV file containing 4 columns:</p>
+<p>CSV file containing 7 columns:</p>
 <table>
 <thead>
 <tr class="header">
@@ -259,33 +259,51 @@
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><code>uid</code></td>
+<td align="left">int</td>
+<td align="left"><code>1924</code></td>
+<td align="left">Unique ID of the segment.</td>
+</tr>
+<tr class="even">
 <td align="left"><code>participant_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>P03</code></td>
+<td align="left"><code>P01</code></td>
 <td align="left">ID of the participant.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><code>video_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>P03_01</code></td>
+<td align="left"><code>P01_11</code></td>
 <td align="left">Video the segment is in.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><code>start_timestamp</code></td>
 <td align="left">string</td>
-<td align="left"><code>00:23:43.847</code></td>
+<td align="left"><code>00:00:00.000</code></td>
 <td align="left">Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><code>stop_timestamp</code></td>
 <td align="left">string</td>
-<td align="left"><code>00:23:47.212</code></td>
+<td align="left"><code>00:00:01.890</code></td>
 <td align="left">End time in <code>HH:mm:ss.SSS</code> of the action.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>start_frame</code></td>
+<td align="left">int</td>
+<td align="left"><code>1</code></td>
+<td align="left">Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>stop_frame</code></td>
+<td align="left">int</td>
+<td align="left"><code>93</code></td>
+<td align="left">End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 </tbody>
 </table>
 <h3 id="epic_test_s2_timestamps.csv">EPIC_test_s2_timestamps.csv</h3>
-<p>CSV file containing 4 columns:</p>
+<p>CSV file containing 7 columns:</p>
 <table>
 <thead>
 <tr class="header">
@@ -297,28 +315,46 @@
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><code>uid</code></td>
+<td align="left">int</td>
+<td align="left"><code>15582</code></td>
+<td align="left">Unique ID of the segment.</td>
+</tr>
+<tr class="even">
 <td align="left"><code>participant_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>P03</code></td>
+<td align="left"><code>P09</code></td>
 <td align="left">ID of the participant.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><code>video_id</code></td>
 <td align="left">string</td>
-<td align="left"><code>P03_01</code></td>
+<td align="left"><code>P09_01</code></td>
 <td align="left">Video the segment is in.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><code>start_timestamp</code></td>
 <td align="left">string</td>
-<td align="left"><code>00:23:43.847</code></td>
+<td align="left"><code>00:00:01.970</code></td>
 <td align="left">Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><code>stop_timestamp</code></td>
 <td align="left">string</td>
-<td align="left"><code>00:23:47.212</code></td>
+<td align="left"><code>00:00:03.090</code></td>
 <td align="left">End time in <code>HH:mm:ss.SSS</code> of the action.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>start_frame</code></td>
+<td align="left">int</td>
+<td align="left"><code>118</code></td>
+<td align="left">Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>stop_frame</code></td>
+<td align="left">int</td>
+<td align="left"><code>185</code></td>
+<td align="left">End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 </tbody>
 </table>
