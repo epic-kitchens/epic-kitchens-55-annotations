@@ -45,65 +45,20 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><code>README.html</code></li>
 <li><code>README.pdf</code></li>
 <li><a href="#license"><code>license.txt</code></a></li>
-<li><a href="EPIC_train_action_narrations.csv"><code>EPIC_train_action_narrations.csv</code></a> (<a href="#epic_train_action_narrationscsv">Info</a>).</li>
 <li><a href="EPIC_train_action_labels.csv"><code>EPIC_train_action_labels.csv</code></a> (<a href="#epic_train_action_labelscsv">Info</a>).</li>
 <li><a href="EPIC_train_action_labels.pkl"><code>EPIC_train_action_labels.pkl</code></a> (<a href="#epic_train_action_labelscsv">Info</a>).</li>
+<li><a href="EPIC_train_action_narrations.csv"><code>EPIC_train_action_narrations.csv</code></a> (<a href="#epic_train_action_narrationscsv">Info</a>).</li>
 <li><a href="EPIC_train_object_labels.csv"><code>EPIC_train_object_labels.csv</code></a> (<a href="#epic_train_object_labelscsv">Info</a>).</li>
 <li><a href="EPIC_test_s1_timestamps.csv"><code>EPIC_test_s1_timestamps.csv</code></a> (<a href="#epic_test_s1_timestampscsv">Info</a>).</li>
 <li><a href="EPIC_test_s1_timestamps.pkl"><code>EPIC_test_s1_timestamps.pkl</code></a> (<a href="#epic_test_s1_timestampscsv">Info</a>).</li>
 <li><a href="EPIC_test_s1_timestamps.csv"><code>EPIC_test_s2_timestamps.csv</code></a> (<a href="#epic_test_s2_timestampscsv">Info</a>).</li>
 <li><a href="EPIC_test_s1_timestamps.pkl"><code>EPIC_test_s2_timestamps.pkl</code></a> (<a href="#epic_test_s2_timestampscsv">Info</a>).</li>
-<li><a href="EPIC_verb_classes.csv"><code>EPIC_verb_classes.csv</code></a> (<a href="#epic_verb_classescsv">Info</a>).</li>
 <li><a href="EPIC_noun_classes.csv"><code>EPIC_noun_classes.csv</code></a> (<a href="#epic_noun_classescsv">Info</a>).</li>
+<li><a href="EPIC_verb_classes.csv"><code>EPIC_verb_classes.csv</code></a> (<a href="#epic_verb_classescsv">Info</a>).</li>
 </ul>
 <p>We direct the reader to <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">RDSF</a> for the videos and rgb/flow frames.</p>
 <p>We provide html and pdf alternatives to this README which are auto-generated.</p>
 <h2 id="files-structure">Files Structure</h2>
-<h3 id="epic_train_action_narrations.csv">EPIC_train_action_narrations.csv</h3>
-<p>CSV file containing 5 columns:</p>
-<p><em>Note: The start/end timestamp refers to the start/end time of the narration, not the action itself.</em></p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><code>participant_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P03</code></td>
-<td align="left">ID of the participant.</td>
-</tr>
-<tr class="even">
-<td align="left"><code>video_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P03_01</code></td>
-<td align="left">Video the segment is in.</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>start_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:23:43.847</code></td>
-<td align="left">Start time in <code>HH:mm:ss.SSS</code> of the narration.</td>
-</tr>
-<tr class="even">
-<td align="left"><code>stop_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:23:47.212</code></td>
-<td align="left">End time in <code>HH:mm:ss.SSS</code> of the narration.</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>narration</code></td>
-<td align="left">string</td>
-<td align="left"><code>close fridge</code></td>
-<td align="left">English description of the action provided by the participant.</td>
-</tr>
-</tbody>
-</table>
 <h3 id="epic_train_action_labels.csv">EPIC_train_action_labels.csv</h3>
 <p>CSV file containing 14 columns:</p>
 <table>
@@ -203,6 +158,51 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </tbody>
 </table>
 <p>Please note we have included a python pickle file for ease of use. This includes a pandas dataframe with the same layout as above.</p>
+<h3 id="epic_train_action_narrations.csv">EPIC_train_action_narrations.csv</h3>
+<p>CSV file containing 5 columns:</p>
+<p><em>Note: The start/end timestamp refers to the start/end time of the narration, not the action itself.</em></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Name</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>participant_id</code></td>
+<td align="left">string</td>
+<td align="left"><code>P03</code></td>
+<td align="left">ID of the participant.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>video_id</code></td>
+<td align="left">string</td>
+<td align="left"><code>P03_01</code></td>
+<td align="left">Video the segment is in.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>start_timestamp</code></td>
+<td align="left">string</td>
+<td align="left"><code>00:23:43.847</code></td>
+<td align="left">Start time in <code>HH:mm:ss.SSS</code> of the narration.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>stop_timestamp</code></td>
+<td align="left">string</td>
+<td align="left"><code>00:23:47.212</code></td>
+<td align="left">End time in <code>HH:mm:ss.SSS</code> of the narration.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>narration</code></td>
+<td align="left">string</td>
+<td align="left"><code>close fridge</code></td>
+<td align="left">English description of the action provided by the participant.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="epic_train_object_labels.csv">EPIC_train_object_labels.csv</h3>
 <p>CSV file containing 6 columns:</p>
 <table>
@@ -367,38 +367,6 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </tbody>
 </table>
 <p>Please note we have included a python pickle file for ease of use. This includes a pandas dataframe with the same layout as above.</p>
-<h3 id="epic_verb_classes.csv">EPIC_verb_classes.csv</h3>
-<p>CSV file containing 3 columns:</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><code>verb_id</code></td>
-<td align="left">int</td>
-<td align="left"><code>3</code></td>
-<td align="left">ID of the verb class.</td>
-</tr>
-<tr class="even">
-<td align="left"><code>class_key</code></td>
-<td align="left">string</td>
-<td align="left"><code>close</code></td>
-<td align="left">Key of the verb class.</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>verbs</code></td>
-<td align="left">list of string (1 or more)</td>
-<td align="left"><code>&quot;['close', 'close-off', 'shut']&quot;</code></td>
-<td align="left">All verbs within the class (includes the key).</td>
-</tr>
-</tbody>
-</table>
 <h3 id="epic_noun_classes.csv">EPIC_noun_classes.csv</h3>
 <p>CSV file containing 3 columns:</p>
 <p><em>Note: a colon represents a compound noun with the more generic noun first. So pan:dust should be read as dust pan.</em></p>
@@ -429,6 +397,38 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <td align="left">list of string (1 or more)</td>
 <td align="left"><code>&quot;['pan:dust', 'dustpan']&quot;</code></td>
 <td align="left">All nouns within the class (includes the key).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="epic_verb_classes.csv">EPIC_verb_classes.csv</h3>
+<p>CSV file containing 3 columns:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Name</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>verb_id</code></td>
+<td align="left">int</td>
+<td align="left"><code>3</code></td>
+<td align="left">ID of the verb class.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>class_key</code></td>
+<td align="left">string</td>
+<td align="left"><code>close</code></td>
+<td align="left">Key of the verb class.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>verbs</code></td>
+<td align="left">list of string (1 or more)</td>
+<td align="left"><code>&quot;['close', 'close-off', 'shut']&quot;</code></td>
+<td align="left">All verbs within the class (includes the key).</td>
 </tr>
 </tbody>
 </table>
