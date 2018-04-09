@@ -61,7 +61,9 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)).
 * [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv)).
 * [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps) ([Info](#epic_test_s1_timestampscsv)).
+* [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps) ([Info](#epic_test_s1_timestampscsv)).
 * [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps) ([Info](#epic_test_s2_timestampscsv)).
+* [`EPIC_test_s2_timestamps.pkl`](EPIC_test_s1_timestamps) ([Info](#epic_test_s2_timestampscsv)).
 * [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv)).
 * [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv)).
 
@@ -131,6 +133,9 @@ CSV file containing 7 columns:
 | `start_frame`     | int    | `1`            | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information)). |
 | `stop_frame`      | int    | `93`           | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information)).  |
 
+Please note we have included a python pickle file for ease of use. This includes
+a pandas dataframe with the same layout as above.
+
 ### EPIC_test_s2_timestamps.csv
 CSV file containing 7 columns:
 
@@ -143,6 +148,9 @@ CSV file containing 7 columns:
 | `stop_timestamp`  | string | `00:00:03.090` | End time in `HH:mm:ss.SSS` of the action.                                                                             |
 | `start_frame`     | int    | `118`          | Start frame of the action (WARNING only for frames extracted as detailed in [Video Information](#video-information)). |
 | `stop_frame`      | int    | `185`          | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information)).  |
+
+Please note we have included a python pickle file for ease of use. This includes
+a pandas dataframe with the same layout as above.
 
 
 ### EPIC_verb_classes.csv
