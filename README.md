@@ -56,34 +56,22 @@ Initially we are only releasing the full ground truth for the training set in or
 * `README.html`
 * `README.pdf`
 * [`license.txt`](#license)
-* [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv)).
 * [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)).
 * [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.pkl) ([Info](#epic_train_action_labelscsv)).
+* [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv)).
 * [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv)).
 * [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv)).
 * [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s1_timestampscsv)).
 * [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s2_timestampscsv)).
 * [`EPIC_test_s2_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s2_timestampscsv)).
-* [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv)).
 * [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv)).
+* [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv)).
 
 We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) for the videos and rgb/flow frames.
 
 We provide html and pdf alternatives to this README which are auto-generated.
 
 ## Files Structure
-### EPIC_train_action_narrations.csv
-CSV file containing 5 columns:
-
-*Note: The start/end timestamp refers to the start/end time of the narration, not the action itself.*
-
-| Column Name       | Type   | Example        | Description                                                    |
-| ----------------- | ------ |--------------- | -------------------------------------------------------------- |
-| `participant_id`  | string | `P03`          | ID of the participant.                                         |
-| `video_id`        | string | `P03_01`       | Video the segment is in.                                       |
-| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the narration.                 |
-| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the narration.                   |
-| `narration`       | string | `close fridge` | English description of the action provided by the participant. |
 
 ### EPIC_train_action_labels.csv
 CSV file containing 14 columns:
@@ -107,6 +95,19 @@ CSV file containing 14 columns:
 
 Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above.
+
+### EPIC_train_action_narrations.csv
+CSV file containing 5 columns:
+
+*Note: The start/end timestamp refers to the start/end time of the narration, not the action itself.*
+
+| Column Name       | Type   | Example        | Description                                                    |
+| ----------------- | ------ |--------------- | -------------------------------------------------------------- |
+| `participant_id`  | string | `P03`          | ID of the participant.                                         |
+| `video_id`        | string | `P03_01`       | Video the segment is in.                                       |
+| `start_timestamp` | string | `00:23:43.847` | Start time in `HH:mm:ss.SSS` of the narration.                 |
+| `stop_timestamp`  | string | `00:23:47.212` | End time in `HH:mm:ss.SSS` of the narration.                   |
+| `narration`       | string | `close fridge` | English description of the action provided by the participant. |
 
 ### EPIC_train_object_labels.csv
 CSV file containing 6 columns:
@@ -153,16 +154,6 @@ Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above.
 
 
-### EPIC_verb_classes.csv
-CSV file containing 3 columns:
-
-| Column Name | Type                       | Example                            | Description                                    |
-| ----------- | -------------------------- |----------------------------------- | ---------------------------------------------- |
-| `verb_id`   | int                        | `3`                                | ID of the verb class.                          |
-| `class_key` | string                     | `close`                            | Key of the verb class.                         |
-| `verbs`     | list of string (1 or more) | `"['close', 'close-off', 'shut']"` | All verbs within the class (includes the key). |
-
-
 ### EPIC_noun_classes.csv
 CSV file containing 3 columns:
 
@@ -174,6 +165,16 @@ read as dust pan.*
 | `noun_id`   | int                        | `2`                         | ID of the noun class.                          |
 | `class_key` | string                     | `pan:dust`                  | Key of the noun class.                         |
 | `nouns`     | list of string (1 or more) | `"['pan:dust', 'dustpan']"` | All nouns within the class (includes the key). |
+
+
+### EPIC_verb_classes.csv
+CSV file containing 3 columns:
+
+| Column Name | Type                       | Example                            | Description                                    |
+| ----------- | -------------------------- |----------------------------------- | ---------------------------------------------- |
+| `verb_id`   | int                        | `3`                                | ID of the verb class.                          |
+| `class_key` | string                     | `close`                            | Key of the verb class.                         |
+| `verbs`     | list of string (1 or more) | `"['close', 'close-off', 'shut']"` | All verbs within the class (includes the key). |
 
 
 
