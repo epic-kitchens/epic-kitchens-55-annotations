@@ -6,8 +6,8 @@ Initial Release, April 2018
 ## Authors
 Dima Damen (1)
 Hazel Doughty (1)
-Sanja Fidler (2)
 Giovanni Maria Farinella (3)
+Sanja Fidler (2)
 Antonino Furnari (3)
 Evangelos Kazakos (1)
 Davide Moltisanti (1)
@@ -26,7 +26,16 @@ Michael Wray (1)
 ## Citing
 When using the dataset, kindly reference:
 
-> Dima Damen, Hazel Doughty, Sanja Fidler, Giovanni Maria Farinella, Antonino Furnari, Evangelos Kazakos, Davide Moltisanti, Jonathan Munro, Toby Perrett, Will Price, Michael Wray (2018). Scaling Egocentric Vision: The EPIC-KITCHENS Dataset. 
+```
+@article{Damen2018EPICKITCHENS,
+   title={Scaling Egocentric Vision: The EPIC-KITCHENS Dataset},
+   author={Damen, Dima and Doughty, Hazel and Farinella, Giovanni Maria  and Fidler, Sanja and 
+           Furnari, Antonino and Kazakos, Evangelos and Moltisanti, Davide and Munro, Jonathan 
+           and Perrett, Toby and Price, Will and Wray, Michael},
+   journal={arXiv preprint arXiv:1804.02748},
+   year={2018}
+}
+```
 
 (Check publication [here](https://epic-kitchens.github.io))
 
