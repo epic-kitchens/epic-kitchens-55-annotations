@@ -33,6 +33,7 @@ jobs:
       - run:
           name: generate html and pdf
           command: |
+            sed -i '/start badges/,/end badges/{//!d}' README.md
             pandoc -f markdown -V geometry:margin=1.5cm -V geometry:landscape README.md -o README.pdf
             pandoc -f markdown README.md -o README.html
       
