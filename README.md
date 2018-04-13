@@ -1,8 +1,10 @@
 # [EPIC Kitchens Dataset](https://epic-kitchens.github.io/2018)
 
+<!-- start badges -->
 [![GitHub release](https://img.shields.io/github/release/epic-kitchens/annotations.svg)](https://github.com/epic-kitchens/annotations/releases/latest)
 [![arXiv-1804.02748](https://img.shields.io/badge/arXiv-1804.02748-red.svg)](https://arxiv.org/abs/1804.02748)
 [![Data](https://img.shields.io/badge/raw_data-1TB-lightgrey.svg)](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d)
+<!-- end badges -->
 
 Initial Release: April 2018
 
