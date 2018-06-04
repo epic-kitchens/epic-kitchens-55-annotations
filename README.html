@@ -64,6 +64,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><a href="EPIC_test_s1_timestamps.pkl"><code>EPIC_test_s2_timestamps.pkl</code></a> (<a href="#epic_test_s2_timestampscsv">Info</a>).</li>
 <li><a href="EPIC_noun_classes.csv"><code>EPIC_noun_classes.csv</code></a> (<a href="#epic_noun_classescsv">Info</a>).</li>
 <li><a href="EPIC_verb_classes.csv"><code>EPIC_verb_classes.csv</code></a> (<a href="#epic_verb_classescsv">Info</a>).</li>
+<li><a href="EPIC_descriptions.csv"><code>EPIC_descriptions.csv</code></a> (<a href="#epic_descriptionscsv">Info</a>).</li>
 </ul>
 <p>We direct the reader to <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">RDSF</a> for the videos and rgb/flow frames.</p>
 <p>We provide html and pdf alternatives to this README which are auto-generated.</p>
@@ -438,6 +439,44 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <td align="left">list of string (1 or more)</td>
 <td align="left"><code>&quot;['close', 'close-off', 'shut']&quot;</code></td>
 <td align="left">All verbs within the class (includes the key).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="epic_descriptions.csv">EPIC_descriptions.csv</h3>
+<p>CSV file containing 4 columns:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Name</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>video_id</code></td>
+<td align="left">string</td>
+<td align="left"><code>P01_01</code></td>
+<td align="left">ID of the video.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>date</code></td>
+<td align="left">string</td>
+<td align="left"><code>30/04/2017</code></td>
+<td align="left">Date on which the video was shot.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>time</code></td>
+<td align="left">string</td>
+<td align="left"><code>13:49:00</code></td>
+<td align="left">Local recording time of the video.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>description</code></td>
+<td align="left">string</td>
+<td align="left"><code>prepared breakfast with soy milk and cereals</code></td>
+<td align="left">Description of the activities contained in the video.</td>
 </tr>
 </tbody>
 </table>
