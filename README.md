@@ -82,6 +82,7 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_test_s2_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s2_timestampscsv)).
 * [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv)).
 * [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv)).
+* [`EPIC_descriptions.csv`](EPIC_descriptions.csv) ([Info](#epic_descriptionscsv)).
 
 We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) for the videos and rgb/flow frames.
 
@@ -191,6 +192,17 @@ CSV file containing 3 columns:
 | `verb_id`   | int                        | `3`                                | ID of the verb class.                          |
 | `class_key` | string                     | `close`                            | Key of the verb class.                         |
 | `verbs`     | list of string (1 or more) | `"['close', 'close-off', 'shut']"` | All verbs within the class (includes the key). |
+
+### EPIC_descriptions.csv
+CSV file containing 4 columns:
+
+| Column Name   | Type   | Example                                         | Description                                            |
+| ------------- | -------|------------------------------------------------ | ------------------------------------------------------ |
+| `video_id`    | string | `P01_01`                                        | ID of the video.                                       |
+| `date`        | string | `30/04/2017`                                    | Date on which the video was shot.                      |
+| `time`        | string | `13:49:00`                                      | Local recording time of the video.                     |
+| `description` | string | `prepared breakfast with soy milk and cereals`  | Description of the activities contained in the video.  |
+
 
 ## File Downloads
 

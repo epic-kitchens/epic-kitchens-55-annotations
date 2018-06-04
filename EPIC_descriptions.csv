@@ -1,0 +1,433 @@
+video_id,date,time,description
+P01_01,30/04/2017,13:49:00,"prepared rice with tofu, celery, carrots and onions. put dry dishes into cupboard."
+P01_02,30/04/2017,14:23:00,"washed dishes, wiped sink and counter, put food container into fridge"
+P01_03,09/05/2017,08:30:00,prepared breakfast with soy milk and cereals
+P01_04,09/05/2017,08:41:00,"put cereals back into the cupboard, washed the cup up"
+P01_05,09/05/2017,21:18:00,"cooked vegetarian sausages and potatoes, put dry dishes into cupboard"
+P01_06,09/05/2017,21:42:00,"washed dishes, wiped sink and counter"
+P01_07,10/05/2017,09:03:00,"prepared breakfast with soy milk and cereals, put dry dishes into cupboard"
+P01_08,10/05/2017,09:13:00,"washed up, put cereals back into the cupboard"
+P01_09,10/05/2017,21:06:22,"baked two pizzas (prepared dough, cooked toppings)"
+P01_10,10/05/2017,22:13:10,"took second pizza out of the oven, cut and served pizza"
+P01_11,10/05/2017,22:24:26,"put pizza leftovers into container, washed up dishes, took rubbish bins out"
+P01_12,11/05/2017,08:44:11,"prepared breakfast with soy milk and cereals, put dry dishes into cupboard"
+P01_13,11/05/2017,08:53:53,"washed up, put cereals back into the cupboard"
+P01_14,11/05/2017,19:37:46,"put rubbish bins into place, prepared pasta with mozzarella, aubergine, onions and tomato sauce"
+P01_15,11/05/2017,21:05:33,"washed dishes, wiped sink and counter"
+P01_16,12/05/2017,09:30:22,"put dry dishes into cupboard, took cereals and poured soy milk"
+P01_17,12/05/2017,09:41:11,"prepared salad with lettuce, tomatoes, carrots, onions and mushrooms, washed up"
+P01_18,13/05/2017,12:37:26,"prepared risotto with squash, mushrooms and onions, washed up"
+P01_19,13/05/2017,14:01:42,"washed dishes, wiped sink and counter"
+P02_01,04/05/2017,09:04:00,"prepared coffee, forgot to change the pod so emptied the mug and prepared again, and prepared cereal with milk"
+P02_02,04/05/2017,09:44:00,"emptied the rubbish bin and replaced the bag, and washed the dishes"
+P02_03,04/05/2017,20:55:00,"cooked pasta with broccoli and a white sauce with pesto, along with microwaved chicken"
+P02_04,04/05/2017,21:53:00,put rest of pasta in tupperware in the fridge and washed the dishes
+P02_05,06/05/2017,19:31:00,drank water and closed open cupboards
+P02_06,06/05/2017,19:49:00,"cleared the kitchen, washed the dishes twice, put frozen onion rings, chicken burger and fries in the oven and prepared salad"
+P02_07,06/05/2017,19:58:00,"set off the timer, took the tray out of the oven and flipped content, and prepared mayo and ketchup sauce"
+P02_08,06/05/2017,20:08:00,"set of the timer, got food out of the oven and served it"
+P02_09,07/05/2017,17:38:00,"prepared dough, cooked minced meat, washed dishes and drank water"
+P02_10,07/05/2017,18:02:00,checked and stirred minced meat being cooked
+P02_11,07/05/2017,18:12:00,stirred and seasoned minced meat being cooked
+P02_12,07/05/2017,19:14:00,"added yoghurt to meat and seasoned, then put meat on dough to make pies, some with meat and some with thyme and olive oil. "
+P02_13,07/05/2017,19:24:00,put pie trays into oven and set timer
+P02_14,07/05/2017,19:35:00,shifted trays in oven
+P02_15,07/05/2017,20:45:00,put pies in tupperware and into the fridge
+P03_02,08/05/2017,21:44:05,"making lunch, taking out bin and cleaning bin"
+P03_03,09/05/2017,09:51:57,getting lunch and doing washing
+P03_04,09/05/2017,17:56:46,putting away food and cooking dinner
+P03_05,09/05/2017,18:41:53,cook dinner
+P03_06,09/05/2017,19:00:12,serving up dinner
+P03_07,09/05/2017,19:16:07,putting dishes on side and washing grapes
+P03_08,09/05/2017,19:33:13,put food back in fridge
+P03_09,09/05/2017,22:34:58,make lunch and wash up
+P03_10,10/05/2017,09:23:14,make breakfast
+P03_11,10/05/2017,09:26:58,make breakfast
+P03_12,10/05/2017,09:39:45,putting dishes on side
+P03_13,10/05/2017,17:53:23,making drinks
+P03_14,10/05/2017,18:13:52,starting dinner and sweeping floor
+P03_15,10/05/2017,18:28:22,check on dinner
+P03_16,10/05/2017,18:35:08,making dinner
+P03_17,10/05/2017,18:47:41,serving up dinner
+P03_18,10/05/2017,20:57:36,put food in fridge
+P03_19,10/05/2017,21:34:18,make lunch and wash up
+P03_20,10/05/2017,21:49:08,make lunch and wash up
+P03_21,11/05/2017,07:55:35,make drink
+P03_22,11/05/2017,09:03:47,get bag ready and get breakfast
+P03_23,11/05/2017,18:11:04,making dinner
+P03_24,11/05/2017,18:27:29,cooking dinner and serving
+P03_25,11/05/2017,18:51:18,make drinks and get grapes
+P03_26,11/05/2017,19:57:04,put dishes on side
+P03_27,11/05/2017,21:45:11,make drink and wash hands
+P03_28,11/05/2017,21:49:22,make drinks and get grapes
+P04_01,09/05/2017,08:03:12,"started making food for lunches (tuna tofu miso burgers, tamagoyaki and vegetables)"
+P04_02,09/05/2017,08:24:00,continued making food for lunches
+P04_03,09/05/2017,08:50:02,finished making food and packed lunch box
+P04_04,09/05/2017,18:02:12,"making curries - fried paneer, boiled potatoes + chopped veg"
+P04_05,09/05/2017,18:17:04,continue making saag paneer and potato curry and make dough for flatbread
+P04_06,09/05/2017,18:52:16,finish curries and flatbread and serve food
+P04_07,09/05/2017,19:18:18,put away leftover food and clear up ingredients
+P04_08,10/05/2017,08:23:54,make breakfast
+P04_09,10/05/2017,18:12:34,"empty and reload dishwasher, clean counters and wash up"
+P04_10,10/05/2017,18:19:46,chop vegetables and chicken for jambalaya and start cooking
+P04_11,10/05/2017,18:38:55,continue cooking jambalaya - chop chorizo
+P04_12,10/05/2017,18:44:54,retrieve spices and continue cooking
+P04_13,10/05/2017,18:47:48,continue cooking and spill rice
+P04_14,10/05/2017,18:53:10,clean up spilt rice
+P04_15,10/05/2017,18:54:58,check on food in pan
+P04_16,10/05/2017,18:56:34,continue cooking - add stock
+P04_17,10/05/2017,19:12:42,check on jambalaya and wash knife
+P04_18,10/05/2017,19:15:18,wash chopping board and check on food
+P04_19,10/05/2017,19:27:35,drink water and check on food
+P04_20,10/05/2017,19:36:14,serve food
+P04_21,10/05/2017,20:29:30,"put away leftover food, load and turn on dishwasher"
+P04_22,11/05/2017,08:07:50,toast spices
+P04_23,11/05/2017,08:11:34,make massaman curry paste
+P04_24,11/05/2017,08:30:06,continue making massaman curry
+P04_25,11/05/2017,08:39:58,mix coconut milk and peel and chop potatoes for curry
+P04_26,11/05/2017,08:46:24,chop chilli
+P04_27,11/05/2017,08:47:06,continue chopping chilli
+P04_28,11/05/2017,08:48:55,continue making curry
+P04_29,11/05/2017,08:52:01,finish making curry and start assembling lunch
+P04_30,11/05/2017,09:12:53,finish packing lunch and make breakfast
+P04_31,11/05/2017,18:18:53,"unload dishwasher, check on curry, wash rice and prepare broccoli"
+P04_32,11/05/2017,19:15:24,check on and start serving food
+P04_33,11/05/2017,19:16:23,finish serving food and put away leftover rice
+P05_01,12/05/2017,09:03:02,"make tea with milk, pick up a banana and a muffin"
+P05_02,12/05/2017,19:44:26,"make microwaveable popcorn, pick up tortilla and dip"
+P05_03,12/05/2017,20:34:04,cook pasta and wash dishes
+P05_04,13/05/2017,09:54:00,empty drainer and make tea with milk
+P05_05,13/05/2017,20:45:25,"continue emptying drainer, heat milk and get cookie"
+P05_06,14/05/2017,10:54:46,make tea with milk and get cookie
+P05_07,14/05/2017,17:56:54,cook dinner and wash dishes
+P05_08,14/05/2017,20:21:40,"cook pasta with meat and vegetables, put in tupperwares and wash dishes"
+P05_09,15/05/2017,07:38:04,"prepare tea with milk and breakfast, and pack lunch"
+P06_01,13/05/2017,11:02:53,prepare cereal
+P06_02,13/05/2017,11:12:13,put bowl and spoon in dishwasher
+P06_03,13/05/2017,13:03:27,prepare pizza dough
+P06_05,13/05/2017,15:30:37,prepare pizza
+P06_07,13/05/2017,16:09:39,put first set of pizzas in the oven and prepare second set of pizzas
+P06_08,18/05/2017,20:27:01,prepare chopping board and vegetables
+P06_09,18/05/2017,20:28:00,cook chicken with vegetables
+P06_10,18/05/2017,21:07:22,"check food, boil potatoes and chop carrots"
+P06_11,18/05/2017,21:22:11,boil carrots with potatoes and stir food
+P06_12,18/05/2017,21:31:23,boil peas
+P06_13,18/05/2017,21:40:01,serve food and put remainder in tupperware
+P06_14,19/05/2017,10:09:45,prepare cereal
+P07_01,13/05/2017,07:06:56,cook rice and clear kitchen
+P07_02,13/05/2017,07:12:59,wash dishes and continue cooking rice
+P07_03,13/05/2017,07:15:41,"finish cooking rice, put blackcurrant in tupperware and wash it, and wash dishes"
+P07_04,13/05/2017,10:02:30,"wash dishes, make coffee, cook eggs with ham and chilli sauce"
+P07_05,13/05/2017,22:40:00,wash dishes and drink water
+P07_06,14/05/2017,11:22:58,wash dishes
+P07_07,14/05/2017,11:26:02,wash dishes and make coffee
+P07_08,14/05/2017,11:34:38,pour coffee and prepare tortilla with cheese and pepperoni
+P07_09,14/05/2017,11:39:02,serve tortilla with sauce and prepare a second one
+P07_10,14/05/2017,16:13:35,"cook rice with potato, fry chicken pieces and prepare tomato and onion salad"
+P07_11,14/05/2017,16:49:11,finish cooking and serve food
+P07_12,14/05/2017,21:03:08,"put rest of food in tupperware, wash dishes and drink water"
+P07_13,14/05/2017,22:06:59,prepare cereal
+P07_14,15/05/2017,09:26:19,"wash dishes, wash, cut and marinate chicken and prepare cereal"
+P07_15,15/05/2017,09:33:40,"fry chicken, wash knife and chopping board"
+P07_16,15/05/2017,09:35:57,"wash tupperware, finish frying chicken and prepare coffee with milk"
+P07_17,15/05/2017,09:39:51,pack lunch of yesterday's rice and potato with the fried chicken
+P07_18,15/05/2017,20:54:07,prepare cereal
+P08_01,16/05/2017,09:29:03,"prepare coffee with milk, and toast with avocado, tomato and goat cheese"
+P08_02,16/05/2017,10:12:26,"put dish and cutlery in washing machine, start washing machine and clean surfaces"
+P08_03,16/05/2017,15:31:54,empty shopping
+P08_04,16/05/2017,15:38:18,unload washing machine
+P08_05,16/05/2017,18:21:21,prepare veggie dinner
+P08_06,16/05/2017,19:45:43,"put remaining food away, load dishwasher and clean surfaces"
+P08_07,16/05/2017,19:55:24,pour a glass of wine
+P08_08,16/05/2017,22:40:52,"put glass in dishwasher, wash and cut pear with sauce"
+P08_09,17/05/2017,09:57:54,"prepare coffee with milk, and toast with avocado, tomato and spread cheese"
+P08_10,17/05/2017,10:38:53,clear and clean
+P08_11,17/05/2017,10:51:40,load tablecloth in washing machine
+P08_12,17/05/2017,11:52:52,check on washing and start the drying cycle
+P08_13,17/05/2017,12:08:16,unload washing machine
+P08_14,17/05/2017,12:12:45,prepare mint tea with lemon
+P08_15,17/05/2017,18:36:57,cook chicken liver with rice
+P08_16,17/05/2017,18:47:25,"continue cooking, add tomato and prepare eggs"
+P08_17,17/05/2017,19:08:54,"finish cooking the chicken, fry rice with eggs"
+P08_18,17/05/2017,19:54:16,"put away food remains, load and start the dishwasher, clean surfaces"
+P08_19,17/05/2017,20:08:36,prepare mint tea with lemon
+P08_20,17/05/2017,22:36:30,prepare and cut kiwi
+P08_21,18/05/2017,10:05:48,"unload dishwasher, prepare oat pancakes with grapes, yogurt and yummy sauce and prepare coffee"
+P08_22,18/05/2017,11:01:14,"load dishwasher, clear and clean surfaces"
+P08_23,18/05/2017,18:48:46,prepare salad with yoghurt and garlic sauce
+P08_24,18/05/2017,19:32:39,cook and egg-fry potato and sweet potato
+P08_25,18/05/2017,20:14:29,clear and load dishwasher
+P08_26,18/05/2017,20:14:56,"continue loading dishwasher, clear and clean surfaces"
+P08_27,18/05/2017,22:22:07,wash and cut kiwi and pear
+P08_28,18/05/2017,22:44:06,load dishwasher
+P09_01,15/05/2017,19:28:02,picking kitchen objects
+P09_02,16/05/2017,08:01:40,preparing omelette and porridge
+P09_03,16/05/2017,08:31:23,washing dishes
+P09_04,17/05/2017,07:53:13,preparing porridge and place pan on stove for omelette
+P09_05,17/05/2017,07:55:16,"preparing omelette and porridge, and washing dishes"
+P09_06,17/05/2017,08:00:11,frying chicken
+P09_07,18/05/2017,07:55:46,preparing protein shake
+P09_08,19/05/2017,07:38:05,preparing porridge with blueberries and honey
+P10_01,2017-05-18,22:26:59,cook dinner
+P10_02,2017-05-19,07:48:15,"make pancakes, clean and wash dishes"
+P10_03,2017-05-25,17:16:51,cook dinner and wash dishes
+P10_04,2017-05-27,11:57:40,"prepare lunch of fried fish, vegetables and rice, and wash dishes"
+P11_01,23/05/2017,18:06:45,washed the dishes
+P11_02,23/05/2017,18:13:22,put away dishes
+P11_03,23/05/2017,18:23:01,"set up whetstone for sharpening, take out laundry, load new laundry"
+P11_04,23/05/2017,18:26:53,sharpen knife
+P11_05,23/05/2017,18:54:34,"make dinner, boil pasta, fry vegetables"
+P11_06,24/05/2017,06:39:44,make bowl of cereal
+P11_07,24/05/2017,06:50:45,wash up bowl of cereal
+P11_08,24/05/2017,17:50:55,put away shopping
+P11_09,24/05/2017,18:04:45,prepare pizza for cooking
+P11_10,24/05/2017,18:13:11,put pizza in oven
+P11_11,24/05/2017,18:23:06,"remove pizza from oven, cut pizza"
+P11_12,24/05/2017,18:37:11,wash up plate
+P11_13,25/05/2017,06:38:57,make bowl of cereal
+P11_14,25/05/2017,06:50:58,wash up bowl of cereal
+P11_15,25/05/2017,19:40:31,"prepare fish and leeks, put away dishes"
+P11_16,25/05/2017,19:54:37,"cook leeks and kale, do the laundry"
+P11_17,25/05/2017,20:00:55,"take salmon out of oven, strain vegetables, put in bowl and mix"
+P11_18,26/05/2017,06:39:14,make bowl of cereal
+P11_19,28/05/2017,16:41:47,make hummus sandwich
+P11_20,29/05/2017,19:50:48,prepare fish cakes and chop leeks
+P11_21,29/05/2017,20:08:09,put kale into pot
+P11_22,29/05/2017,20:10:59,"strain vegetables, remove fishcakes from oven"
+P11_23,30/05/2017,06:41:59,make bowl of cereal
+P11_24,30/05/2017,18:14:36,"put away washing up, put new bag in bin"
+P12_01,27/05/2017,11:51:36,"make salad, pour juice, clean and put in dishwasher"
+P12_02,28/05/2017,15:52:44,"load washing machine, cook minced meat and cut cucumber"
+P12_03,28/05/2017,16:43:38,"boil and drain pasta sheets, prepare cucumber dip, continue cooking minced meat"
+P12_04,28/05/2017,17:48:03,"lay lasagne meat and pasta sheets, add mozzarella and cheese, add dip then additional sheets and garnish, cover with foil and put in oven. load dishwasher and serve cucumber with olive oil. wash some dishes and clean surfaces"
+P12_05,28/05/2017,18:30:53,check lasagne in oven
+P12_06,28/05/2017,18:59:19,"pick up lasagne from oven, server and fill wine glass"
+P12_07,28/05/2017,21:36:38,"wash dishes, load dishwasher and clean surfaces"
+P12_08,29/05/2017,13:14:11,prepare healthy drinks
+P13_01,10/06/2017,00:00:00,put water to boil and clean the dishes
+P13_02,10/06/2017,00:00:00,prepare spaghetti
+P13_03,10/06/2017,00:00:00,prepare spaghetti
+P13_04,11/06/2017,00:00:00,prepare nesquik
+P13_05,11/06/2017,00:00:00,prepare coffee and prepare salad
+P13_06,11/06/2017,00:00:00,put pizza in oven
+P13_07,11/06/2017,00:00:00,take pizza out of the oven and cut it
+P13_08,12/06/2017,00:00:00,clean the dishes and prepare spaghetti carbonara
+P13_09,12/06/2017,00:00:00,clean the dishes and prepare sausages
+P13_10,12/06/2017,00:00:00,prepare hamburger with sausages
+P14_01,19/06/2017,21:41:04,started making food for dinner
+P14_02,19/06/2017,21:47:17,finished making food for dinner
+P14_03,19/06/2017,23:44:49,broke a bowl
+P14_04,19/06/2017,23:52:25,washing up
+P14_05,20/06/2017,20:21:45,prepared a bowl of milk with cereals
+P14_06,22/06/2017,08:37:31,prepared a bowl of milk with cereals
+P14_07,22/06/2017,08:53:51,washing up
+P14_08,22/06/2017,21:46:15,making food for dinner
+P14_09,22/06/2017,23:39:06,washing up
+P15_01,20/06/2017,11:14:02,serve breakfast cereals
+P15_02,20/06/2017,10:51:01,clean up breakfast and start cooking
+P15_03,28/06/2017,08:42:22,"finish cooking, pack lunch box and wash dishes"
+P15_04,21/06/2017,09:40:26,wash and chop vegetables
+P15_05,21/06/2017,09:47:02,fry croissant
+P15_06,21/06/2017,10:03:08,chop and fry food and prepare tea
+P15_07,20/06/2017,11:28:43,heat up food
+P15_08,22/06/2017,11:47:30,empty dishwasher and eat tacos
+P15_09,22/06/2017,12:07:14,chop and fry vegetables
+P15_10,28/06/2017,08:51:01,fry vegetables
+P15_11,28/06/2017,08:57:16,fry vegetables
+P15_12,28/06/2017,08:57:54,pack lunch box
+P15_13,28/06/2017,09:01:47,wash dishes and chop vegetables
+P16_01,01/07/2017,18:10:56,cooked instant noodles for lunch
+P16_02,01/07/2017,22:16:30,poured milk into a cup
+P16_03,03/07/2017,18:24:09,did the dishes after lunch
+P16_04,03/07/2017,18:40:40,cooked meat soup for lunch
+P17_01,08/07/2017,08:35:01,prepare instant noodle soup
+P17_02,21/07/2017,18:00:11,prepare noodles with vegetables
+P17_03,26/07/2017,10:33:29,boil dumplings
+P17_04,31/07/2017,09:32:21,cook noodles and boil corn on the cob
+P18_01,22/07/2017,08:24:24,prepare coffee and toast bread
+P18_02,22/07/2017,08:32:35,"wash dishes, pour coffee and spread peanut butter on toast "
+P18_03,22/07/2017,12:24:23,prepare salad
+P18_04,23/07/2017,07:46:01,wash dishes and clean sink
+P18_05,23/07/2017,17:28:36,"season meat and place in oven, measure rice"
+P18_06,23/07/2017,17:32:04,prepare coffee and oats
+P18_07,23/07/2017,17:46:45,"empty drainer, measure pasta and wash dishes"
+P18_08,23/07/2017,17:32:04,boil pasta
+P18_09,23/07/2017,17:46:45,"add sauce to pasta, serve and wash pan"
+P18_10,24/07/2017,07:54:55,prepare coffee and toast bread
+P18_11,24/07/2017,20:43:03,"wash dishes, prepare salad, prepare toast with cheese and ham"
+P18_12,24/07/2017,21:04:05,wash dishes and drink water
+P19_01,01/08/2017,09:36:45,made fried eggs with tomatoes and steamed rice
+P19_02,01/08/2017,09:55:01,combine rice and fried eggs into one dish
+P19_03,01/08/2017,10:11:13,wash dishes and pan
+P19_04,03/08/2017,07:48:18,"made steamed noodles with beans, tomatoes, chicken"
+P19_05,03/08/2017,07:51:13,made milk with oatmeals
+P19_06,04/08/2017,08:05:59,made fried egg and bacon
+P20_01,31/07/2017,23:36:12,fry meat and prepare salad
+P20_02,01/08/2017,00:14:44,clear and wash dishes
+P20_03,01/08/2017,09:45:05,prepare cereal and toast with ham
+P20_04,02/08/2017,23:33:43,skin and fry salmon
+P20_05,03/08/2017,00:45:27,wash dishes
+P20_06,03/08/2017,11:15:37,"prepare cereal, salad and toast with ham"
+P20_07,03/08/2017,11:29:56,wash dishes and clear table
+P21_01,15/08/2017,00:00:00,"prepare tortilla with tomato and cheese, put grapes in cup and fill a glass of milk"
+P21_02,16/08/2017,00:00:00,"prepare tortilla with tomato and cheese, put grapes in cup and fill a glass of milk"
+P21_03,17/08/2017,00:00:00,"prepare tortilla with tomato and cheese, put grapes in cup and fill a glass of milk and put activia yoghurt on table"
+P21_04,18/08/2017,00:00:00,"prepare tortilla with tomato and cheese, put grapes in cup and fill a glass of milk and put activia yoghurt on table"
+P22_01,29/08/2017,09:28:00,"arrange the dishes, prepare breakfast"
+P22_02,29/08/2017,10:02:00,"clear the table, wash the dishes, clean"
+P22_03,29/08/2017,15:18:00,"wash the dishes, clean the kitchen"
+P22_04,29/08/2017,17:02:00,"arrange the dishes, prepare a snack"
+P22_05,30/08/2017,09:22:00,"wash the dishes, prepare breakfast"
+P22_06,30/08/2017,10:08:00,"clear the table, wash the dishes"
+P22_07,30/08/2017,14:21:00,"cook pasta with courgette, clean"
+P22_08,30/08/2017,15:17:00,"clear the table, wash the dishes, make coffee"
+P22_09,30/08/2017,17:26:00,"arrange the dishes, wash the dishes, clean the kitchen"
+P22_10,31/08/2017,00:45:00,wash the dishes
+P22_11,31/08/2017,08:45:00,"arrange the dishes, prepare breakfast"
+P22_12,31/08/2017,08:57:00,prepare breakfast
+P22_13,31/08/2017,09:45:00,"wash the dishes, clear the table"
+P22_14,31/08/2017,15:23:00,"make coffee, wash the dishes"
+P22_15,31/08/2017,15:53:00,"arrange the dishes, clear the table, wash the dishes"
+P22_16,31/08/2017,21:16:00,make dinner
+P22_17,31/08/2017,22:19:00,"clear the table, wash the dishes, clean the kitchen"
+P23_01,27/09/2017,14:29:00,cutting onions to cook curry
+P23_02,27/09/2017,14:53:00,cooking indian egg curry while cleaning dishes
+P23_03,27/09/2017,21:32:00,preparing ingredients to cook chicken curry
+P23_04,29/09/2017,21:50:00,cooking spicy indian chicken curry
+P23_05,30/09/2017,16:02:00,preparing ingredients and cooking vegetable curry
+P24_01,22/09/2017,09:38:00,prepare breakfast
+P24_02,22/09/2017,22:25:00,prepare dinner
+P24_03,22/09/2017,23:11:00,wash dishes
+P24_04,07/10/2017,10:14:00,prepare breakfast
+P24_05,07/10/2017,14:28:00,prepare lunch
+P24_06,07/10/2017,15:22:00,wash dinner and clean oven
+P24_07,07/10/2017,22:45:00,prepare dinner
+P24_08,08/10/2017,14:54:00,prepare lunch and wash dishes
+P24_09,08/10/2017,21:37:00,prepare dinner and wash dishes
+P25_01,09/10/2017,15:07:00,start preparing lunch
+P25_02,09/10/2017,15:21:00,continue preparing lunch
+P25_03,09/10/2017,15:27:00,clean the kitchen
+P25_04,09/10/2017,18:58:00,make coffee and clean the kitchen
+P25_05,09/10/2017,22:08:00,"start preparing dinner, wash dishes and clean"
+P25_06,10/10/2017,15:18:00,"start preparing lunch, wash the cutlery"
+P25_07,10/10/2017,15:27:00,"continue preparing lunch, wash the dishes"
+P25_08,10/10/2017,15:34:00,"continue preparing lunch, wash the dishes"
+P25_09,11/10/2017,14:54:00,"start preparing lunch, wash the dishes"
+P25_10,11/10/2017,15:01:00,"continue preparing lunch, wash the pan"
+P25_11,11/10/2017,15:48:00,"prepare coffee, clean the kitchen"
+P25_12,11/10/2017,15:51:00,continue preparing coffee
+P26_01,08/10/2017,16:33:00,start to prepare lunch
+P26_02,08/10/2017,16:41:00,continue preparing lunch
+P26_03,08/10/2017,17:01:00,wash dishes
+P26_04,08/10/2017,22:49:00,start preparing dinner
+P26_05,08/10/2017,22:58:00,continue preparing dinner
+P26_06,08/10/2017,23:00:00,continue preparing dinner
+P26_07,08/10/2017,23:02:00,continue preparing dinner
+P26_08,08/10/2017,23:04:00,continue preparing dinner
+P26_09,08/10/2017,23:15:00,continue preparing dinner
+P26_10,09/10/2017,15:15:00,start preparing lunch
+P26_11,09/10/2017,15:19:00,continue preparing lunch
+P26_12,09/10/2017,15:21:00,continue preparing lunch
+P26_13,09/10/2017,15:31:00,continue preparing lunch
+P26_14,09/10/2017,15:33:00,continue preparing lunch
+P26_15,09/10/2017,15:43:00,continue preparing lunch
+P26_16,09/10/2017,15:45:00,continue preparing lunch
+P26_17,09/10/2017,15:47:00,finish and serve lunch
+P26_18,09/10/2017,16:22:00,wash dishes
+P26_19,09/10/2017,16:30:00,wash dishes
+P26_20,11/10/2017,15:26:00,start preparing lunch
+P26_21,11/10/2017,15:34:00,continue preparing lunch
+P26_22,11/10/2017,15:37:00,continue preparing lunch
+P26_23,11/10/2017,15:40:00,continue preparing lunch
+P26_24,11/10/2017,15:42:00,continue preparing lunch
+P26_25,11/10/2017,15:45:00,continue preparing lunch
+P26_26,11/10/2017,15:49:00,continue preparing lunch
+P26_27,11/10/2017,15:51:00,continue preparing lunch
+P26_28,11/10/2017,15:55:00,finish and serve lunch
+P26_29,11/10/2017,16:19:00,clear kitchen
+P26_30,12/10/2017,14:06:00,start preparing breakfast
+P26_31,12/10/2017,14:08:00,continue preparing breakfast
+P26_32,12/10/2017,14:11:00,continue preparing breakfast
+P26_33,12/10/2017,14:12:00,continue preparing breakfast
+P26_34,12/10/2017,14:15:00,continue preparing breakfast
+P26_35,12/10/2017,15:56:00,start preparing lunch
+P26_36,12/10/2017,16:04:00,continue preparing lunch
+P26_37,12/10/2017,16:08:00,continue preparing lunch
+P26_38,12/10/2017,16:14:00,continue preparing lunch
+P26_39,12/10/2017,16:16:00,continue preparing lunch
+P26_40,12/10/2017,16:18:00,continue preparing lunch
+P26_41,12/10/2017,16:28:00,finish and serve lunch
+P27_01,09/10/2017,10:44:00,wash dishes and prepare breakfast
+P27_02,09/10/2017,10:48:00,prepare coffee and wash dishes
+P27_03,09/10/2017,10:54:00,wash dishes and clear kitchen
+P27_04,09/10/2017,10:55:00,wash dishes and clear kitchen
+P27_05,10/10/2017,09:58:00,wash dishes
+P27_06,11/10/2017,10:19:00,wash dishes and clear kitchen
+P27_07,13/10/2017,10:15:00,"wash dishes, clear kitchen and prepare breakfast"
+P28_01,11/11/2017,15:58,"serve food, put remainder in tupperware, serve cheese and wash dishes"
+P28_02,11/11/2017,18:24,"empty drainer, wash dishes and clean surface"
+P28_03,12/11/2017,17:23,"prepare vegetables, peel and wash potato"
+P28_04,12/11/2017,17:52,cut vegetables
+P28_05,12/11/2017,18:01,continue cutting vegetables and put in baking tray
+P28_06,12/11/2017,18:14,"continue cutting vegetables, season and put into oven"
+P28_07,12/11/2017,18:40,check on food and stir
+P28_08,12/11/2017,18:46,wash dishes
+P28_09,13/11/2017,20:04,prepare avocado and tomato salad
+P28_10,13/11/2017,20:06,heat bread in oven
+P28_11,13/11/2017,20:11,fry sausage
+P28_12,13/11/2017,20:14,serve sausage
+P28_13,13/11/2017,20:18,fry eggs
+P28_14,13/11/2017,20:23,"butter bread, serve and wash dishes"
+P28_15,14/11/2017,22:47,prepare vegetables
+P28_16,14/11/2017,22:53,cut vegetables
+P28_17,14/11/2017,22:54,prepare to cook quorn
+P28_18,14/11/2017,22:57,prepare fajita wrap and read instructions
+P28_19,14/11/2017,23:00,continue cutting vegetables and read instructions
+P28_20,14/11/2017,23:03,fry quorn
+P28_21,14/11/2017,23:08,fry vegetables and season
+P28_22,14/11/2017,23:11,continue frying and stir
+P28_23,14/11/2017,23:12,heat bread in microwave
+P28_24,14/11/2017,23:13,cut tomato
+P28_25,14/11/2017,23:20,fill fajita wraps
+P28_26,14/11/2017,23:23,clear and wash dishes
+P29_01,15/11/2017,19:59:33,cook spicy sausages with vegetables
+P29_02,15/11/2017,20:31:21,finish cooking and serve with yoghurt
+P29_03,19/11/2017,18:59:31,put dishes away and wash dishes
+P29_04,20/11/2017,10:05:18,"put dishes away, prepare cereal and coffee"
+P29_05,21/11/2017,19:35:07,"wash dishes, boil potato and place in baking tray, place chicken in baking tray"
+P29_06,21/11/2017,20:21:46,get potato and chicken out of oven and serve
+P30_01,09/11/2017,18:49:35,check freezer
+P30_02,09/11/2017,18:55:39,toast and butter bread. prepare carrots with hummus dip. dip one carrot and eat.
+P30_03,10/11/2017,09:16:30,"wash dishes, toast bread with olive oil, balsamic and salt. prepare coffee, load and start washing machine, serve and clean surfaces"
+P30_04,10/11/2017,22:21:57,"wash and dry dishes, put clothes on airer"
+P30_05,11/11/2017,19:42:58,"cook fish with sauce and rice, and peel carrots"
+P30_06,11/11/2017,21:09:15,wash and dry dishes and prepare coffee
+P30_07,12/11/2017,11:09:03,"make coffee and cereal, and clean surfaces"
+P30_08,12/11/2017,15:27:43,"cook pasta with sauce, make coffee and wash dishes"
+P30_09,12/11/2017,17:03:10,"make coffee, empty drainer and wash dishes"
+P30_10,12/11/2017,22:05:33,"microwave rice and heat fish from day before, put rest of fish away in tupperware in fridge, clear and wash dishes"
+P30_11,12/11/2017,23:26:35,"throw remaining food in trash, clean and wash dishes, and prepare tea"
+P31_01,24/10/2017,21:00:24,make ham and cheese sandwich
+P31_02,24/10/2017,21:14:00,clear kitchen
+P31_03,25/10/2017,07:32:38,cut pineapple and prepare toast
+P31_04,25/10/2017,07:34:48,prepare coffee
+P31_05,31/10/2017,11:02:18,prepare toast and hot lemonade
+P31_06,31/10/2017,11:13:56,wash dishes and make coffee
+P31_07,31/10/2017,11:18:28,clear and wash dishes
+P31_08,31/10/2017,20:08:48,make salad and tuna with cheese
+P31_09,31/10/2017,20:23:24,wash dishes
+P31_10,01/11/2017,07:04:28,prepare toast and hot lemonade
+P31_11,01/11/2017,07:16:40,"clear kitchen, wash dishes and prepare coffee"
+P31_12,01/11/2017,07:20:32,wash dishes
+P31_13,02/11/2017,19:25:58,make ham and cheese sandwich
+P31_14,02/11/2017,19:38:00,wash dishes and clean surfaces
+P32_01,21/10/2017,15:21:00,boil pasta and start preparing sauce
+P32_02,21/10/2017,15:26:00,continue boiling pasta and preparing sauce
+P32_03,21/10/2017,15:33:00,"drain pasta, cook with sauce and serve"
+P32_04,21/10/2017,16:01:00,clean surfaces and wash dishes
+P32_05,22/10/2017,13:55:00,boil pasta and prepare sauce
+P32_06,22/10/2017,14:12:00,"cook pasta with mushroom and pesto sauce, boil milk"
+P32_07,22/10/2017,20:27:00,toast bread
+P32_08,22/10/2017,20:32:00,serve tuna
+P32_09,22/10/2017,20:55:00,wash dishes and clean surfaces
+P32_10,22/10/2017,21:04:00,clean hob and kitchen surface
