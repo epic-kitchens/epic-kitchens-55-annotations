@@ -206,10 +206,13 @@ CSV file containing 4 columns:
 
 ## File Downloads
 
-Due to the size of the dataset we provide three scripts for downloading the
-[videos](https://github.com/epic-kitchens/download-scripts/blob/master/download_videos.sh), 
-[frames](https://github.com/epic-kitchens/download-scripts/blob/master/download_frames_rgb_flow.sh)
-or [object annotation images](https://github.com/epic-kitchens/download-scripts/blob/master/download_object_detection_images.sh) separately.
+Due to the size of the dataset we provide scripts for downloading parts of the dataset:
+
+* [videos](https://github.com/epic-kitchens/download-scripts/blob/master/download_videos.sh) (750GB)
+* [frames](https://github.com/epic-kitchens/download-scripts/blob/master/download_frames_rgb_flow.sh) (320GB)
+  * [rgb-frames](https://raw.githubusercontent.com/epic-kitchens/download-scripts/master/frames_rgb_flow/download_rgb.sh) (220GB)
+  * [flow-frames](https://raw.githubusercontent.com/epic-kitchens/download-scripts/master/frames_rgb_flow/download_flow.sh) (100GB)
+* [object annotation images](https://github.com/epic-kitchens/download-scripts/blob/master/download_object_detection_images.sh) (80GB)
 
 *Note: These scripts will work for Linux and Mac. For Windows users a bash 
 installation should work.*
