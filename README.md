@@ -136,7 +136,7 @@ CSV file containing 6 columns:
 | `participant_id` | string                      | `P01`                      | ID of participant.                                                            |
 | `video_id`       | string                      | `P01_01`                   | Video the object was annotated in.                                            |
 | `frame`          | int                         | `056581`                   | Frame number of the annotated object.                                         |
-| `bounding_boxes` | list of 4-tuple (0 or more) | `"[(76, 1260, 462, 186)]"` | Annotated boxes with format `(<top:int>,<left:int>,<width:int>,<height:int>)`.|
+| `bounding_boxes` | list of 4-tuple (0 or more) | `"[(76, 1260, 462, 186)]"` | Annotated boxes with format `(<top:int>,<left:int>,<height:int>,<width:int>)`.|
 
 ### EPIC_test_s1_timestamps.csv
 CSV file containing 7 columns:
