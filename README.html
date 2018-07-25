@@ -65,6 +65,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><a href="EPIC_noun_classes.csv"><code>EPIC_noun_classes.csv</code></a> (<a href="#epic_noun_classescsv">Info</a>).</li>
 <li><a href="EPIC_verb_classes.csv"><code>EPIC_verb_classes.csv</code></a> (<a href="#epic_verb_classescsv">Info</a>).</li>
 <li><a href="EPIC_descriptions.csv"><code>EPIC_descriptions.csv</code></a> (<a href="#epic_descriptionscsv">Info</a>).</li>
+<li><a href="EPIC_many_shot_verbs.csv"><code>EPIC_many_shot_verbs.csv</code></a> (<a href="#epic_many_shot_verbscsv">Info</a></li>
+<li><a href="EPIC_many_shot_nouns.csv"><code>EPIC_many_shot_nouns.csv</code></a> (<a href="#epic_many_shot_nounscsv">Info</a></li>
+<li><a href="EPIC_many_shot_actions.csv"><code>EPIC_many_shot_actions.csv</code></a> (<a href="#epic_many_shot_actionscsv">Info</a></li>
 </ul>
 <p>We direct the reader to <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">RDSF</a> for the videos and rgb/flow frames.</p>
 <p>We provide html and pdf alternatives to this README which are auto-generated.</p>
@@ -477,6 +480,102 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <td align="left">string</td>
 <td align="left"><code>prepared breakfast with soy milk and cereals</code></td>
 <td align="left">Description of the activities contained in the video.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="epic_many_shot_verbs.csv">EPIC_many_shot_verbs.csv</h3>
+<p>CSV file containing the many shot verbs. A verb class is considered many shot if it appears more than 100 times in training. (NOTE: this file is derived from <code>EPIC_train_action_labels.csv</code>)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Name</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>verb_class</code></td>
+<td align="left">int</td>
+<td align="left"><code>1</code></td>
+<td align="left">Numeric ID of the verb class</td>
+</tr>
+<tr class="even">
+<td align="left"><code>verb</code></td>
+<td align="left">string</td>
+<td align="left"><code>put</code></td>
+<td align="left">Verb corresponding to the verb class</td>
+</tr>
+</tbody>
+</table>
+<h3 id="epic_many_shot_nouns.csv">EPIC_many_shot_nouns.csv</h3>
+<p>CSV file containing the many shot nouns. A noun class is considered many shot if it appears more than 100 times in training. (NOTE: this file is derived from <code>EPIC_train_action_labels.csv</code>)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Name</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>noun_class</code></td>
+<td align="left">int</td>
+<td align="left"><code>3</code></td>
+<td align="left">Numeric ID of the noun class</td>
+</tr>
+<tr class="even">
+<td align="left"><code>noun</code></td>
+<td align="left">string</td>
+<td align="left"><code>tap</code></td>
+<td align="left">Noun corresponding to the noun class</td>
+</tr>
+</tbody>
+</table>
+<h3 id="epic_many_shot_actions.csv">EPIC_many_shot_actions.csv</h3>
+<p>CSV file containing the many shot actions. An action class (composed of a verb class and noun class) is considered many shot if BOTH the verb class and noun class are many shot AND the action class appears in training at least once. (NOTE: this file is derived from <code>EPIC_train_action_labels.csv</code>)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Name</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>action_class</code></td>
+<td align="left">(int, int)</td>
+<td align="left"><code>(9, 84)</code></td>
+<td align="left">Numeric Pair of IDs, first the verb, then the noun</td>
+</tr>
+<tr class="even">
+<td align="left"><code>verb_class</code></td>
+<td align="left">int</td>
+<td align="left"><code>9</code></td>
+<td align="left">Numeric ID of the verb class</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>verb</code></td>
+<td align="left">string</td>
+<td align="left"><code>move</code></td>
+<td align="left">Verb corresponding to the verb class</td>
+</tr>
+<tr class="even">
+<td align="left"><code>noun_class</code></td>
+<td align="left">int</td>
+<td align="left"><code>84</code></td>
+<td align="left">Numeric ID of the noun class</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>noun</code></td>
+<td align="left">string</td>
+<td align="left"><code>sausage</code></td>
+<td align="left">Noun corresponding to the noun class</td>
 </tr>
 </tbody>
 </table>
