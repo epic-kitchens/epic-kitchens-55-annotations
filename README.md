@@ -83,6 +83,9 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv)).
 * [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv)).
 * [`EPIC_descriptions.csv`](EPIC_descriptions.csv) ([Info](#epic_descriptionscsv)).
+* [`EPIC_many_shot_verbs.csv`](EPIC_many_shot_verbs.csv) ([Info](#epic_many_shot_verbscsv)
+* [`EPIC_many_shot_nouns.csv`](EPIC_many_shot_nouns.csv) ([Info](#epic_many_shot_nounscsv)
+* [`EPIC_many_shot_actions.csv`](EPIC_many_shot_actions.csv) ([Info](#epic_many_shot_actionscsv)
 
 We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) for the videos and rgb/flow frames.
 
@@ -203,6 +206,41 @@ CSV file containing 4 columns:
 | `time`        | string | `13:49:00`                                      | Local recording time of the video.                     |
 | `description` | string | `prepared breakfast with soy milk and cereals`  | Description of the activities contained in the video.  |
 
+### EPIC_many_shot_verbs.csv
+CSV file containing the many shot verbs. A verb class is considered many shot if
+it appears more than 100 times in training.
+(NOTE: this file is derived from `EPIC_train_action_labels.csv`)
+
+
+| Column Name   | Type   | Example                                         | Description                                            |
+| ------------- | -------|------------------------------------------------ | ------------------------------------------------------ |
+| `verb_class`  | int    | `1`                                             | Numeric ID of the verb class                           |
+| `verb`        | string | `put`                                           | Verb corresponding to the verb class                   |
+
+### EPIC_many_shot_nouns.csv
+CSV file containing the many shot nouns. A noun class is considered many shot if
+it appears more than 100 times in training.
+(NOTE: this file is derived from `EPIC_train_action_labels.csv`)
+
+| Column Name   | Type   | Example                                         | Description                                            |
+| ------------- | -------|------------------------------------------------ | ------------------------------------------------------ |
+| `noun_class`  | int    | `3`                                             | Numeric ID of the noun class                           |
+| `noun`        | string | `tap`                                           | Noun corresponding to the noun class                   |
+
+### EPIC_many_shot_actions.csv
+CSV file containing the many shot actions. An action class (composed of a verb
+class and noun class) is considered many shot if BOTH the verb class and noun
+class are many shot AND the action class appears in training at least once.
+(NOTE: this file is derived from `EPIC_train_action_labels.csv`)
+
+
+| Column Name    | Type       | Example                                         | Description                                            |
+| -------------- | ---------- |------------------------------------------------ | ------------------------------------------------------ |
+| `action_class` | (int, int) | `(9, 84)`                                       | Numeric Pair of IDs, first the verb, then the noun     |
+| `verb_class`   | int        | `9`                                             | Numeric ID of the verb class                           |
+| `verb`         | string     | `move`                                          | Verb corresponding to the verb class                   |
+| `noun_class`   | int        | `84`                                            | Numeric ID of the noun class                           |
+| `noun`         | string     | `sausage`                                       | Noun corresponding to the noun class                   |
 
 ## File Downloads
 
