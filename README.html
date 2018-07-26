@@ -56,6 +56,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><a href="#license"><code>license.txt</code></a></li>
 <li><a href="EPIC_train_action_labels.csv"><code>EPIC_train_action_labels.csv</code></a> (<a href="#epic_train_action_labelscsv">Info</a>).</li>
 <li><a href="EPIC_train_action_labels.pkl"><code>EPIC_train_action_labels.pkl</code></a> (<a href="#epic_train_action_labelscsv">Info</a>).</li>
+<li><a href="EPIC_train_invalid_labels.csv"><code>EPIC_train_invalid_labels.csv</code></a> (<a href="#epic_train_invalid_labelscsv">Info</a>).</li>
+<li><a href="EPIC_train_invalid_labels.pkl"><code>EPIC_train_invalid_labels.pkl</code></a> (<a href="#epic_train_invalid_labelscsv">Info</a>).</li>
 <li><a href="EPIC_train_action_narrations.csv"><code>EPIC_train_action_narrations.csv</code></a> (<a href="#epic_train_action_narrationscsv">Info</a>).</li>
 <li><a href="EPIC_train_object_labels.csv"><code>EPIC_train_object_labels.csv</code></a> (<a href="#epic_train_object_labelscsv">Info</a>).</li>
 <li><a href="EPIC_test_s1_timestamps.csv"><code>EPIC_test_s1_timestamps.csv</code></a> (<a href="#epic_test_s1_timestampscsv">Info</a>).</li>
@@ -73,6 +75,105 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>We provide html and pdf alternatives to this README which are auto-generated.</p>
 <h2 id="files-structure">Files Structure</h2>
 <h3 id="epic_train_action_labels.csv">EPIC_train_action_labels.csv</h3>
+<p>CSV file containing 14 columns:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Name</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>uid</code></td>
+<td align="left">int</td>
+<td align="left"><code>6374</code></td>
+<td align="left">Unique ID of the segment.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>video_id</code></td>
+<td align="left">string</td>
+<td align="left"><code>P03_01</code></td>
+<td align="left">Video the segment is in.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>narration</code></td>
+<td align="left">string</td>
+<td align="left"><code>close fridge</code></td>
+<td align="left">English description of the action provided by the participant.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>start_timestamp</code></td>
+<td align="left">string</td>
+<td align="left"><code>00:23:43.847</code></td>
+<td align="left">Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>stop_timestamp</code></td>
+<td align="left">string</td>
+<td align="left"><code>00:23:47.212</code></td>
+<td align="left">End time in <code>HH:mm:ss.SSS</code> of the action.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>start_frame</code></td>
+<td align="left">int</td>
+<td align="left"><code>85430</code></td>
+<td align="left">Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>stop_frame</code></td>
+<td align="left">int</td>
+<td align="left"><code>85643</code></td>
+<td align="left">End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+</tr>
+<tr class="even">
+<td align="left"><code>participant_id</code></td>
+<td align="left">string</td>
+<td align="left"><code>P03</code></td>
+<td align="left">ID of the participant.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>verb</code></td>
+<td align="left">string</td>
+<td align="left"><code>close</code></td>
+<td align="left">Parsed verb from the narration.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>noun</code></td>
+<td align="left">string</td>
+<td align="left"><code>fridge</code></td>
+<td align="left">First parsed noun from the narration.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>verb_class</code></td>
+<td align="left">int</td>
+<td align="left"><code>3</code></td>
+<td align="left">Numeric ID of the parsed verb's class.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>noun_class</code></td>
+<td align="left">int</td>
+<td align="left"><code>10</code></td>
+<td align="left">Numeric ID of the parsed noun's class.</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>all_nouns</code></td>
+<td align="left">list of string (1 or more)</td>
+<td align="left"><code>['fridge']</code></td>
+<td align="left">List of all parsed nouns from the narration.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>all_nouns_class</code></td>
+<td align="left">list of int (1 or more)</td>
+<td align="left"><code>[10]</code></td>
+<td align="left">List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.</td>
+</tr>
+</tbody>
+</table>
+<p>Please note we have included a python pickle file for ease of use. This includes a pandas dataframe with the same layout as above.</p>
+<h3 id="epic_train_invalid_labels.csv">EPIC_train_invalid_labels.csv</h3>
 <p>CSV file containing 14 columns:</p>
 <table>
 <thead>
