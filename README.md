@@ -117,7 +117,7 @@ CSV file containing 14 columns:
 | `all_nouns_class`   | list of int    (1 or more)   | `[10]`           | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                             |
 
 Please note we have included a python pickle file for ease of use. This includes
-a pandas dataframe with the same layout as above.
+a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
 
 ### EPIC_train_invalid_labels.csv
 CSV file containing 14 columns:
@@ -140,7 +140,7 @@ CSV file containing 14 columns:
 | `all_nouns_class`   | list of int    (1 or more)   | `[10]`           | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                             |
 
 Please note we have included a python pickle file for ease of use. This includes
-a pandas dataframe with the same layout as above.
+a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
 
 ### EPIC_train_action_narrations.csv
 CSV file containing 5 columns:
@@ -181,7 +181,7 @@ CSV file containing 7 columns:
 | `stop_frame`      | int    | `93`           | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information)).  |
 
 Please note we have included a python pickle file for ease of use. This includes
-a pandas dataframe with the same layout as above.
+a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
 
 ### EPIC_test_s2_timestamps.csv
 CSV file containing 7 columns:
@@ -197,7 +197,7 @@ CSV file containing 7 columns:
 | `stop_frame`      | int    | `185`          | End frame of the action (WARNING only for frames  extracted as detailed in [Video Information](#video-information)).  |
 
 Please note we have included a python pickle file for ease of use. This includes
-a pandas dataframe with the same layout as above.
+a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
 
 
 ### EPIC_noun_classes.csv
