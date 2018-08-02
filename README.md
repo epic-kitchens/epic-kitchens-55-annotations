@@ -72,22 +72,23 @@ Initially we are only releasing the full ground truth for the training set in or
 * `README.html`
 * `README.pdf`
 * [`license.txt`](#license)
-* [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)).
-* [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.pkl) ([Info](#epic_train_action_labelscsv)).
-* [`EPIC_train_invalid_labels.csv`](EPIC_train_invalid_labels.csv) ([Info](#epic_train_invalid_labelscsv)).
-* [`EPIC_train_invalid_labels.pkl`](EPIC_train_invalid_labels.pkl) ([Info](#epic_train_invalid_labelscsv)).
-* [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv)).
-* [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv)).
-* [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv)).
-* [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s1_timestampscsv)).
-* [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s2_timestampscsv)).
-* [`EPIC_test_s2_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s2_timestampscsv)).
-* [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv)).
-* [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv)).
-* [`EPIC_descriptions.csv`](EPIC_descriptions.csv) ([Info](#epic_descriptionscsv)).
-* [`EPIC_many_shot_verbs.csv`](EPIC_many_shot_verbs.csv) ([Info](#epic_many_shot_verbscsv)
-* [`EPIC_many_shot_nouns.csv`](EPIC_many_shot_nouns.csv) ([Info](#epic_many_shot_nounscsv)
-* [`EPIC_many_shot_actions.csv`](EPIC_many_shot_actions.csv) ([Info](#epic_many_shot_actionscsv)
+* [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv))
+* [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.pkl) ([Info](#epic_train_action_labelscsv))
+* [`EPIC_train_invalid_labels.csv`](EPIC_train_invalid_labels.csv) ([Info](#epic_train_invalid_labelscsv))
+* [`EPIC_train_invalid_labels.pkl`](EPIC_train_invalid_labels.pkl) ([Info](#epic_train_invalid_labelscsv))
+* [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv))
+* [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv))
+* [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv))
+* [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s1_timestampscsv))
+* [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s2_timestampscsv))
+* [`EPIC_test_s2_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s2_timestampscsv))
+* [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv))
+* [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv))
+* [`EPIC_descriptions.csv`](EPIC_descriptions.csv) ([Info](#epic_descriptionscsv))
+* [`EPIC_many_shot_verbs.csv`](EPIC_many_shot_verbs.csv) ([Info](#epic_many_shot_verbscsv))
+* [`EPIC_many_shot_nouns.csv`](EPIC_many_shot_nouns.csv) ([Info](#epic_many_shot_nounscsv))
+* [`EPIC_many_shot_actions.csv`](EPIC_many_shot_actions.csv) ([Info](#epic_many_shot_actionscsv))
+* [`EPIC_video_info.csv`](EPIC_video_info.csv) ([info](#epic_video_infocsv))
 
 We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) for the videos and rgb/flow frames.
 
@@ -266,6 +267,18 @@ class are many shot AND the action class appears in training at least once.
 | `verb`         | string     | `move`                                          | Verb corresponding to the verb class                   |
 | `noun_class`   | int        | `84`                                            | Numeric ID of the noun class                           |
 | `noun`         | string     | `sausage`                                       | Noun corresponding to the noun class                   |
+
+
+### EPIC_video_info.csv
+CSV file containing information for each video
+
+| Column Name    | Type       | Example                                         | Description                                            |
+| -------------- | ---------- |------------------------------------------------ | ------------------------------------------------------ |
+| `video`        | (string)   | `P01_01`                                        | Video ID                                               |
+| `resolution`   | (string)   | `1920x1080`                                     | Resolution of the video, format is `WIDTHxHEIGHT`      |
+| `duration`     | (float)    | `1652.152817`                                   | Duration of the video, in seconds                      |
+| `fps`          | (float)    | `59.9400599400599`                              | Frame rate of the video
+
 
 ## File Downloads
 
