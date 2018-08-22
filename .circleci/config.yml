@@ -29,6 +29,7 @@ jobs:
           command: |
             sudo apt-get update; sudo apt-get install pandoc
             sudo apt-get --no-install-recommends install texlive-{base,extra-utils,generic-recommended,fonts-recommended,font-utils,latex-base,latex-recommended,latex-extra,math-extra,pstricks} lmodern
+            pip install --user pandas
 
       - run:
           name: generate html and pdf
@@ -36,6 +37,10 @@ jobs:
             sed -i '/start badges/,/end badges/{//!d}' README.md
             pandoc -f markdown -V geometry:margin=1.5cm -V geometry:landscape README.md -o README.pdf
             pandoc -f markdown README.md -o README.html
+      - run:
+          name: update pickle metadata
+          command: |
+              python .circleci/add_metadata.py *.pkl --commit-hash `git log -1 --format="%h"` --version-number `git describe --abbrev=0 --tags`
       
       - run:
           name: upload generated files
@@ -49,6 +54,7 @@ jobs:
             git config --global push.default simple
 
             git add README.{html,pdf}
+            git add *.pkl
             prev="$(git rev-parse --short HEAD)"
-            git commit -m "[skip ci] Generate README files from $prev"
+            git commit -m "[skip ci] Generate README files and add metadata to pickles from $prev"
             git push
