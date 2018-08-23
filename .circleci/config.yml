@@ -41,6 +41,11 @@ jobs:
           name: update pickle metadata
           command: |
               python .circleci/add_metadata.py *.pkl --commit-hash `git log -1 --format="%h"` --version-number `git describe --abbrev=0 --tags`
+
+      - run:
+          name: test pickles
+          command: |
+              python .circleci/test_pickles.py *.pkl --csv-paths EPIC_train_action_labels.csv EPIC_test_s1_timestamps.csv EPIC_test_s2_timestamps.csv EPIC_train_invalid_labels.csv --commit-hash `git log -1 --format="%h"` --version-number `git describe --abbrev=0 --tags`
       
       - run:
           name: upload generated files
