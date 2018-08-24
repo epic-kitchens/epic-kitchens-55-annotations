@@ -20,10 +20,6 @@ jobs:
     steps:
 
       - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "e6:81:23:60:ff:5a:ad:8b:69:e5:d6:39:97:f8:3c:e3"
-
       - run:
           name: install dependencies
           command: |
@@ -50,10 +46,6 @@ jobs:
       - run:
           name: upload generated files
           command: |
-            # Setting up ssh agent to add read/write deploy key as add_ssh_key doesn't work :(
-            eval $(ssh-agent)
-            ssh-add ~/.ssh/id_rsa_e6812360ff5aad8b69e5d63997f83ce3
-
             git config --global user.email "circleci@example.com"
             git config --global user.name "Circleci"
             git config --global push.default simple
