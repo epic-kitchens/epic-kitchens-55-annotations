@@ -34,14 +34,14 @@ Michael Wray (1)
 When using the dataset, kindly reference:
 
 ```
-@article{Damen2018EPICKITCHENS,
+@INPROCEEDINGS{Damen2018EPICKITCHENS,
    title={Scaling Egocentric Vision: The EPIC-KITCHENS Dataset},
    author={Damen, Dima and Doughty, Hazel and Farinella, Giovanni Maria  and Fidler, Sanja and 
            Furnari, Antonino and Kazakos, Evangelos and Moltisanti, Davide and Munro, Jonathan 
            and Perrett, Toby and Price, Will and Wray, Michael},
-   journal={arXiv preprint arXiv:1804.02748},
+   booktitle={European Conference on Computer Vision (ECCV)},
    year={2018}
-}
+} 
 ```
 
 (Check publication [here](https://epic-kitchens.github.io))
