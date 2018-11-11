@@ -114,7 +114,7 @@ CSV file containing 14 columns:
 | `verb_class`        | int                          | `3`              | Numeric ID of the parsed verb's class.                                                                                |
 | `noun_class`        | int                          | `10`             | Numeric ID of the parsed noun's class.                                                                                |
 | `all_nouns`         | list of string (1 or more)   | `['fridge']`     | List of all parsed nouns from the narration.                                                                          |
-| `all_nouns_class`   | list of int    (1 or more)   | `[10]`           | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                             |
+| `all_noun_classes` | list of int    (1 or more)   | `[10]`           | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                             |
 
 Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
@@ -137,7 +137,7 @@ CSV file containing 14 columns:
 | `verb_class`        | int                          | `3`              | Numeric ID of the parsed verb's class.                                                                                |
 | `noun_class`        | int                          | `10`             | Numeric ID of the parsed noun's class.                                                                                |
 | `all_nouns`         | list of string (1 or more)   | `['fridge']`     | List of all parsed nouns from the narration.                                                                          |
-| `all_nouns_class`   | list of int    (1 or more)   | `[10]`           | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                             |
+| `all_noun_classes` | list of int    (1 or more)   | `[10]`           | List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.                             |
 
 Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
