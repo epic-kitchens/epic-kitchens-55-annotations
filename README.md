@@ -235,7 +235,9 @@ CSV file containing 4 columns:
 ### EPIC_many_shot_verbs.csv
 CSV file containing the many shot verbs. A verb class is considered many shot if
 it appears more than 100 times in training.
-(NOTE: this file is derived from `EPIC_train_action_labels.csv`)
+(NOTE: this file is derived from `EPIC_train_action_labels.csv`, checkout the
+[accompanying notebook](https://github.com/epic-kitchens/epic-many-shot-classes) 
+demonstrating how we compute these classes)
 
 
 | Column Name   | Type   | Example                                         | Description                                            |
@@ -246,7 +248,9 @@ it appears more than 100 times in training.
 ### EPIC_many_shot_nouns.csv
 CSV file containing the many shot nouns. A noun class is considered many shot if
 it appears more than 100 times in training.
-(NOTE: this file is derived from `EPIC_train_action_labels.csv`)
+(NOTE: this file is derived from `EPIC_train_action_labels.csv`, checkout the
+[accompanying notebook](https://github.com/epic-kitchens/epic-many-shot-classes) 
+demonstrating how we compute these classes)
 
 | Column Name   | Type   | Example                                         | Description                                            |
 | ------------- | -------|------------------------------------------------ | ------------------------------------------------------ |
@@ -257,7 +261,9 @@ it appears more than 100 times in training.
 CSV file containing the many shot actions. An action class (composed of a verb
 class and noun class) is considered many shot if BOTH the verb class and noun
 class are many shot AND the action class appears in training at least once.
-(NOTE: this file is derived from `EPIC_train_action_labels.csv`)
+(NOTE: this file is derived from `EPIC_train_action_labels.csv`, checkout the
+[accompanying notebook](https://github.com/epic-kitchens/epic-many-shot-classes) 
+demonstrating how we compute these classes)
 
 
 | Column Name    | Type       | Example                                         | Description                                            |
