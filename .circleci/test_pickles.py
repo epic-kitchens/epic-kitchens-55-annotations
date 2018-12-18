@@ -13,7 +13,7 @@ def test_files(pkl_paths, csv_paths, commit_hash, version_number):
         assert df._metadata['commit_hash'] == commit_hash
         assert df._metadata['version_number'] == version_number
         assert len(csv) == len(df)
-        csv_uid = set(csv.uid)
+        csv_uid = set(csv[csv.columns[0]])
         df_uid = set(df.index)
         assert csv_uid == df_uid
 
