@@ -78,6 +78,8 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_train_invalid_labels.pkl`](EPIC_train_invalid_labels.pkl) ([Info](#epic_train_invalid_labelscsv))
 * [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv))
 * [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv))
+* [`EPIC_train_object_action_correspondence.csv`](EPIC_train_object_action_correspondence.csv) ([Info](#epic_train_object_action_correspondencecsv))
+* [`EPIC_train_object_action_correspondence.pkl`](EPIC_train_object_action_correspondence.pkl) ([Info](#epic_train_object_action_correspondencecsv))
 * [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv))
 * [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s1_timestampscsv))
 * [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s2_timestampscsv))
@@ -166,6 +168,20 @@ CSV file containing 6 columns:
 | `video_id`       | string                      | `P01_01`                   | Video the object was annotated in.                                            |
 | `frame`          | int                         | `056581`                   | Frame number of the annotated object.                                         |
 | `bounding_boxes` | list of 4-tuple (0 or more) | `"[(76, 1260, 462, 186)]"` | Annotated boxes with format `(<top:int>,<left:int>,<height:int>,<width:int>)`.|
+
+### EPIC_train_object_action_correspondence.csv
+CSV file containing 5 columns:
+
+| Column Name       | Type                        | Example                    | Description                                                                   |
+|-------------------|-----------------------------| -------------------------- | ------------------------------------------------------------------------------|
+| `participant_id`  | string                      | `P01`                      | ID of participant. |
+| `video_id`        | string                      | `P01_01`                   | Video the frames are part of. |
+| `object_frame`    | int                         | `56581`                    | Frame number of the object detection image from `object_detection_images`. |
+| `action_frame`    | int                         | `56638`                    | Frame number of the corresponding image in the released frames for action recognition in `frames_rgb_flow`.|
+| `start_timestamp` | string                      | `00:00:00.00`              | Timestamp in `HH:mm:ss.SS` corresponding to the frames. |
+
+Please note we have included a python pickle file for ease of use. This includes
+a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
 
 ### EPIC_test_s1_timestamps.csv
 CSV file containing 7 columns:
