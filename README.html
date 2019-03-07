@@ -62,6 +62,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><a href="EPIC_train_object_labels.csv"><code>EPIC_train_object_labels.csv</code></a> (<a href="#epic_train_object_labelscsv">Info</a>)</li>
 <li><a href="EPIC_train_object_action_correspondence.csv"><code>EPIC_train_object_action_correspondence.csv</code></a> (<a href="#epic_train_object_action_correspondencecsv">Info</a>)</li>
 <li><a href="EPIC_train_object_action_correspondence.pkl"><code>EPIC_train_object_action_correspondence.pkl</code></a> (<a href="#epic_train_object_action_correspondencecsv">Info</a>)</li>
+<li><a href="EPIC_test_s1_object_video_list.csv"><code>EPIC_test_s1_object_video_list.csv</code></a> (<a href="#epic_test_s1_object_video_listcsv">Info</a>)</li>
+<li><a href="EPIC_test_s2_object_video_list.csv"><code>EPIC_test_s2_object_video_list.csv</code></a> (<a href="#epic_test_s2_object_video_listcsv">Info</a>)</li>
 <li><a href="EPIC_test_s1_timestamps.csv"><code>EPIC_test_s1_timestamps.csv</code></a> (<a href="#epic_test_s1_timestampscsv">Info</a>)</li>
 <li><a href="EPIC_test_s1_timestamps.pkl"><code>EPIC_test_s1_timestamps.pkl</code></a> (<a href="#epic_test_s1_timestampscsv">Info</a>)</li>
 <li><a href="EPIC_test_s1_timestamps.csv"><code>EPIC_test_s2_timestamps.csv</code></a> (<a href="#epic_test_s2_timestampscsv">Info</a>)</li>
@@ -415,6 +417,33 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </tbody>
 </table>
 <p>Please note we have included a python pickle file for ease of use. This includes a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.</p>
+<h3 id="epic_test_s1_object_video_list.csv">EPIC_test_s1_object_video_list.csv</h3>
+<p>CSV file listing the videos used to obtain the object s1 test frames. The frames can be obtained from <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">RDSF</a> under <code>object_detection_images/test</code>. Please test all frames from this folder for the videos listed in this csv.</p>
+<p>| Column Name | Type | Example | Description | | ----------------- | ------ |--------------- | --------------------------------------------------------------------------------------------------------------------- | | <code>video_id</code> | string | <code>P01_11</code> | Video containing the object s1 test frames. | | <code>participant_id</code> | string | <code>P01</code> | ID of the participant. | ### EPIC_test_s2_object_video_list.csv CSV file listing the videos used to obtain the object s2 test frames. The frames can be obtained from <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">RDSF</a> under <code>object_detection_images/test</code>. Please test all frames from this folder for the videos listed in this csv.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Name</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>video_id</code></td>
+<td align="left">string</td>
+<td align="left"><code>P01_11</code></td>
+<td align="left">Video containing the object s2 test frames.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>participant_id</code></td>
+<td align="left">string</td>
+<td align="left"><code>P01</code></td>
+<td align="left">ID of the participant.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="epic_test_s1_timestamps.csv">EPIC_test_s1_timestamps.csv</h3>
 <p>CSV file containing 7 columns:</p>
 <table>
