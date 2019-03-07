@@ -80,6 +80,8 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv))
 * [`EPIC_train_object_action_correspondence.csv`](EPIC_train_object_action_correspondence.csv) ([Info](#epic_train_object_action_correspondencecsv))
 * [`EPIC_train_object_action_correspondence.pkl`](EPIC_train_object_action_correspondence.pkl) ([Info](#epic_train_object_action_correspondencecsv))
+* [`EPIC_test_s1_object_video_list.csv`](EPIC_test_s1_object_video_list.csv) ([Info](#epic_test_s1_object_video_listcsv))
+* [`EPIC_test_s2_object_video_list.csv`](EPIC_test_s2_object_video_list.csv) ([Info](#epic_test_s2_object_video_listcsv))
 * [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv))
 * [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s1_timestampscsv))
 * [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s2_timestampscsv))
@@ -182,6 +184,21 @@ CSV file containing 5 columns:
 
 Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
+
+### EPIC_test_s1_object_video_list.csv
+CSV file listing the videos used to obtain the object s1 test frames. The frames can be obtained from [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) under `object_detection_images/test`. Please test all frames from this folder for the videos listed in this csv.
+
+| Column Name       | Type   | Example        | Description                                                                                                           |
+| ----------------- | ------ |--------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `video_id`        | string | `P01_11`       | Video containing the object s1 test frames.                                                                                              |
+| `participant_id`  | string | `P01`          | ID of the participant.                                                                                                |
+### EPIC_test_s2_object_video_list.csv
+CSV file listing the videos used to obtain the object s2 test frames. The frames can be obtained from [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) under `object_detection_images/test`. Please test all frames from this folder for the videos listed in this csv.
+
+| Column Name       | Type   | Example        | Description                                                                                                           |
+| ----------------- | ------ |--------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `video_id`        | string | `P01_11`       | Video containing the object s2 test frames.                                                                                              |
+| `participant_id`  | string | `P01`          | ID of the participant.                                                                                                |
 
 ### EPIC_test_s1_timestamps.csv
 CSV file containing 7 columns:
