@@ -25,7 +25,7 @@ jobs:
           command: |
             sudo apt-get update; sudo apt-get install pandoc
             sudo apt-get --no-install-recommends install texlive-{base,extra-utils,generic-recommended,fonts-recommended,font-utils,latex-base,latex-recommended,latex-extra,math-extra,pstricks} lmodern
-            pip install --user pandas
+            pip install --user pandas==0.23.4
 
       - run:
           name: generate html and pdf
