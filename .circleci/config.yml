@@ -54,4 +54,5 @@ jobs:
             git add *.pkl
             prev="$(git rev-parse --short HEAD)"
             git commit -m "[skip ci] Generate README files and add metadata to pickles from $prev"
-            git push
+            CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+            git push -u origin "$CURRENT_BRANCH"
