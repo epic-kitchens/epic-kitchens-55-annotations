@@ -35,15 +35,17 @@ jobs:
             pandoc -f markdown README.md -o README.html
       - run:
           name: update pickle metadata
-          command: |
-              python .circleci/add_metadata.py *.pkl --commit-hash `git log -1 --format="%h"` --version-number `git describe --abbrev=0 --tags`
+          command: >
+              python .circleci/add_metadata.py *.pkl 
+                --commit-hash "$(git rev-parse --short HEAD)"
+                --version-number "$(git describe --abbrev=0 --tags)"
 
       - run:
           name: test pickles
           command: >
               python .circleci/test_pickles.py *.pkl
-                 --commit-hash `git log -1 --format="%h"`
-                 --version-number `git describe --abbrev=0 --tags`
+                 --commit-hash "$(git rev-parse --short HEAD)"
+                 --version-number "$(git describe --abbrev=0 --tags)"
       - run:
           name: upload generated files
           command: |
