@@ -9,9 +9,9 @@ def test_files(pkl_paths, csv_paths, commit_hash, version_number):
     for pkl_path, csv_path in zip(pkl_paths, csv_paths):
         csv = pd.read_csv(csv_path)
         df = pd.read_pickle(pkl_path)
-        assert df._metadata['commit_hash'] == commit_hash
-        assert df._metadata['version_number'] == version_number
-        assert len(csv) == len(df)
+        assert_equal(commit_hash, df._metadata['commit_hash'])
+        assert_equal(version_number, df._metadata['version_number'])
+        assert_equal(len(df), len(csv))
         csv_ids = set(csv[csv.columns[0]])
         df_ids = set(df.index)
         assert csv_ids == df_ids, get_csv_error_message(pkl_path, csv_path, csv_ids, df_ids)
@@ -43,6 +43,10 @@ def missing_set_message(set_, max_items=50):
         elems_to_str(as_list[:max_items//2]),
         elems_to_str(as_list[-max_items//2:])
     ) + "\n"
+
+
+def assert_equal(expected, actual):
+    assert expected == actual, "Expected {} but was {}".format(expected, actual)
 
 
 def main(args):
