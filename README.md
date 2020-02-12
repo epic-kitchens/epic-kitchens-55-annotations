@@ -80,6 +80,8 @@ Initially we are only releasing the full ground truth for the training set in or
 * [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv))
 * [`EPIC_train_object_action_correspondence.csv`](EPIC_train_object_action_correspondence.csv) ([Info](#epic_train_object_action_correspondencecsv))
 * [`EPIC_train_object_action_correspondence.pkl`](EPIC_train_object_action_correspondence.pkl) ([Info](#epic_train_object_action_correspondencecsv))
+* [`EPIC_test_s1_object_action_correspondence.pkl`](EPIC_test_s1_object_action_correspondence.pkl) ([Info](#epic_test_s1_object_action_correspondencecsv))
+* [`EPIC_test_s2_object_action_correspondence.pkl`](EPIC_test_s2_object_action_correspondence.pkl) ([Info](#epic_test_s2_object_action_correspondencecsv))
 * [`EPIC_test_s1_object_video_list.csv`](EPIC_test_s1_object_video_list.csv) ([Info](#epic_test_s1_object_video_listcsv))
 * [`EPIC_test_s2_object_video_list.csv`](EPIC_test_s2_object_video_list.csv) ([Info](#epic_test_s2_object_video_listcsv))
 * [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv))
@@ -174,16 +176,45 @@ CSV file containing 6 columns:
 ### EPIC_train_object_action_correspondence.csv
 CSV file containing 5 columns:
 
-| Column Name       | Type                        | Example                    | Description                                                                   |
-|-------------------|-----------------------------| -------------------------- | ------------------------------------------------------------------------------|
-| `participant_id`  | string                      | `P01`                      | ID of participant. |
-| `video_id`        | string                      | `P01_01`                   | Video the frames are part of. |
-| `object_frame`    | int                         | `56581`                    | Frame number of the object detection image from `object_detection_images`. |
-| `action_frame`    | int                         | `56638`                    | Frame number of the corresponding image in the released frames for action recognition in `frames_rgb_flow`.|
-| `start_timestamp` | string                      | `00:00:00.00`              | Timestamp in `HH:mm:ss.SS` corresponding to the frames. |
+| Column Name      | Type   | Example       | Description                                                                                                 |
+|------------------|--------|---------------|-------------------------------------------------------------------------------------------------------------|
+| `participant_id` | string | `P01`         | ID of participant.                                                                                          |
+| `video_id`       | string | `P01_01`      | Video the frames are part of.                                                                               |
+| `object_frame`   | int    | `56581`       | Frame number of the object detection image from `object_detection_images`.                                  |
+| `action_frame`   | int    | `56638`       | Frame number of the corresponding image in the released frames for action recognition in `frames_rgb_flow`. |
+| `timestamp`      | string | `00:00:00.00` | Timestamp in `HH:mm:ss.SS` corresponding to the frame.                                                      |
 
 Please note we have included a python pickle file for ease of use. This includes
 a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
+
+### EPIC_test_s1_object_action_correspondence.csv
+CSV file containing 5 columns:
+
+| Column Name      | Type   | Example       | Description                                                                                                 |
+|------------------|--------|---------------|-------------------------------------------------------------------------------------------------------------|
+| `participant_id` | string | `P01`         | ID of participant.                                                                                          |
+| `video_id`       | string | `P01_11`      | Video containing the object s1 test frames.                                                                 |
+| `object_frame`   | int    | `33601`       | Frame number of the object detection image from `object_detection_images`.                                  |
+| `action_frame`   | int    | `33635`       | Frame number of the corresponding image in the released frames for action recognition in `frames_rgb_flow`. |
+| `timestamp`      | string | `00:09:20.58` | Timestamp in `HH:mm:ss.SS` corresponding to the frames.                                                     |
+
+Please note we have included a python pickle file for ease of use. This includes
+a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
+
+### EPIC_test_s2_object_action_correspondence.csv
+CSV file containing 5 columns:
+
+| Column Name      | Type   | Example       | Description                                                                                                 |
+|------------------|--------|---------------|-------------------------------------------------------------------------------------------------------------|
+| `participant_id` | string | `P09`         | ID of participant.                                                                                          |
+| `video_id`       | string | `P09_05`      | Video containing the object s2 test frames.                                                                 |
+| `object_frame`   | int    | `15991`       | Frame number of the object detection image from `object_detection_images`.                                  |
+| `action_frame`   | int    | `16007`       | Frame number of the corresponding image in the released frames for action recognition in `frames_rgb_flow`. |
+| `timestamp`      | string | `00:04:26.78` | Timestamp in `HH:mm:ss.SS` corresponding to the frames.                                                     |
+
+Please note we have included a python pickle file for ease of use. This includes
+a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.
+
 
 ### EPIC_test_s1_object_video_list.csv
 CSV file listing the videos used to obtain the object s1 test frames. The frames can be obtained from [RDSF](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d) under `object_detection_images/test`. Please test all frames from this folder for the videos listed in this csv.
