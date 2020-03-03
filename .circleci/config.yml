@@ -8,8 +8,8 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: circleci/python:3.6.1
-      
+      - image: circleci/python:3.6
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -24,8 +24,8 @@ jobs:
           name: install dependencies
           command: |
             sudo apt-get update; sudo apt-get install pandoc
-            sudo apt-get --no-install-recommends install texlive-{base,extra-utils,generic-recommended,fonts-recommended,font-utils,latex-base,latex-recommended,latex-extra,math-extra,pstricks} lmodern
-            pip install --user pandas
+            sudo apt-get --no-install-recommends install texlive-{base,extra-utils,generic-recommended,fonts-recommended,font-utils,latex-base,latex-recommended,latex-extra,science,pstricks} lmodern
+            pip install --user pandas==0.22.0
 
       - run:
           name: generate html and pdf
@@ -36,22 +36,26 @@ jobs:
       - run:
           name: update pickle metadata
           command: |
-              python .circleci/add_metadata.py *.pkl --commit-hash `git log -1 --format="%h"` --version-number `git describe --abbrev=0 --tags`
+              python .circleci/add_metadata.py *.pkl \
+                --commit-hash "$(git rev-parse --short HEAD)" \
+                --version-number "$(git describe --abbrev=0 --tags)"
 
       - run:
           name: test pickles
           command: |
-              python .circleci/test_pickles.py *.pkl --csv-paths EPIC_train_action_labels.csv EPIC_test_s1_timestamps.csv EPIC_test_s2_timestamps.csv EPIC_train_invalid_labels.csv EPIC_train_object_action_correspondence.csv --commit-hash `git log -1 --format="%h"` --version-number `git describe --abbrev=0 --tags`
-      
+              python .circleci/test_pickles.py *.pkl \
+                 --commit-hash "$(git rev-parse --short HEAD)" \
+                 --version-number "$(git describe --abbrev=0 --tags)"
       - run:
           name: upload generated files
           command: |
             git config --global user.email "circleci@example.com"
-            git config --global user.name "Circleci"
+            git config --global user.name "CircleCI"
             git config --global push.default simple
 
             git add README.{html,pdf}
             git add *.pkl
             prev="$(git rev-parse --short HEAD)"
             git commit -m "[skip ci] Generate README files and add metadata to pickles from $prev"
-            git push
+            CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+            git push -u origin "$CURRENT_BRANCH"

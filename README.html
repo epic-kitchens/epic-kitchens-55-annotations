@@ -1,9 +1,8 @@
 <h1 id="epic-kitchens-dataset"><a href="https://epic-kitchens.github.io/2018">EPIC Kitchens Dataset</a></h1>
 <!-- start badges -->
 <!-- end badges -->
-
 <blockquote>
-<p><a href="https://epic-kitchens.github.io/">EPIC-Kitchens</a> is the largest dataset in first-person (egocentric) vision; multi-faceted non-scripted recordings in native environments - i.e. the wearers' homes, capturing all daily activities in the kitchen over multiple days. Annotations are collected using a novel `live' audio commentary approach.</p>
+<p><a href="https://epic-kitchens.github.io/">EPIC-Kitchens</a> is the largest dataset in first-person (egocentric) vision; multi-faceted non-scripted recordings in native environments - i.e. the wearers’ homes, capturing all daily activities in the kitchen over multiple days. Annotations are collected using a novel `live’ audio commentary approach.</p>
 </blockquote>
 <h2 id="authors">Authors</h2>
 <p>Dima Damen (1) Hazel Doughty (1) Giovanni Maria Farinella (3) Sanja Fidler (2) Antonino Furnari (3) Evangelos Kazakos (1) Davide Moltisanti (1) Jonathan Munro (1) Toby Perrett (1) Will Price (1) Michael Wray (1)</p>
@@ -12,12 +11,7 @@
 <li>(2 University of Toronto)</li>
 <li>(3 University of Catania)</li>
 </ul>
-<p><strong>Contact:</strong> <script type="text/javascript">
-<!--
-h='&#98;&#114;&#x69;&#x73;&#116;&#x6f;&#108;&#46;&#x61;&#x63;&#46;&#x75;&#x6b;';a='&#64;';n='&#x75;&#x6f;&#98;&#x2d;&#x65;&#112;&#x69;&#x63;&#x2d;&#x6b;&#x69;&#116;&#x63;&#104;&#x65;&#110;&#x73;&#50;&#48;&#x31;&#56;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#x75;&#x6f;&#98;&#x2d;&#x65;&#112;&#x69;&#x63;&#x2d;&#x6b;&#x69;&#116;&#x63;&#104;&#x65;&#110;&#x73;&#50;&#48;&#x31;&#56;&#32;&#x61;&#116;&#32;&#98;&#114;&#x69;&#x73;&#116;&#x6f;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x61;&#x63;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript></p>
+<p><strong>Contact:</strong> <a href="mailto:uob-epic-kitchens2018@bristol.ac.uk">uob-epic-kitchens2018@bristol.ac.uk</a></p>
 <h2 id="citing">Citing</h2>
 <p>When using the dataset, kindly reference:</p>
 <pre><code>@INPROCEEDINGS{Damen2018EPICKITCHENS,
@@ -60,6 +54,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><a href="EPIC_train_invalid_labels.pkl"><code>EPIC_train_invalid_labels.pkl</code></a> (<a href="#epic_train_invalid_labelscsv">Info</a>)</li>
 <li><a href="EPIC_train_action_narrations.csv"><code>EPIC_train_action_narrations.csv</code></a> (<a href="#epic_train_action_narrationscsv">Info</a>)</li>
 <li><a href="EPIC_train_object_labels.csv"><code>EPIC_train_object_labels.csv</code></a> (<a href="#epic_train_object_labelscsv">Info</a>)</li>
+<li><a href="EPIC_train_object_action_correspondence.csv"><code>EPIC_train_object_action_correspondence.csv</code></a> (<a href="#epic_train_object_action_correspondencecsv">Info</a>)</li>
+<li><a href="EPIC_train_object_action_correspondence.pkl"><code>EPIC_train_object_action_correspondence.pkl</code></a> (<a href="#epic_train_object_action_correspondencecsv">Info</a>)</li>
+<li><a href="EPIC_test_s1_object_action_correspondence.pkl"><code>EPIC_test_s1_object_action_correspondence.pkl</code></a> (<a href="#epic_test_s1_object_action_correspondencecsv">Info</a>)</li>
+<li><a href="EPIC_test_s2_object_action_correspondence.pkl"><code>EPIC_test_s2_object_action_correspondence.pkl</code></a> (<a href="#epic_test_s2_object_action_correspondencecsv">Info</a>)</li>
+<li><a href="EPIC_test_s1_object_video_list.csv"><code>EPIC_test_s1_object_video_list.csv</code></a> (<a href="#epic_test_s1_object_video_listcsv">Info</a>)</li>
+<li><a href="EPIC_test_s2_object_video_list.csv"><code>EPIC_test_s2_object_video_list.csv</code></a> (<a href="#epic_test_s2_object_video_listcsv">Info</a>)</li>
 <li><a href="EPIC_test_s1_timestamps.csv"><code>EPIC_test_s1_timestamps.csv</code></a> (<a href="#epic_test_s1_timestampscsv">Info</a>)</li>
 <li><a href="EPIC_test_s1_timestamps.pkl"><code>EPIC_test_s1_timestamps.pkl</code></a> (<a href="#epic_test_s1_timestampscsv">Info</a>)</li>
 <li><a href="EPIC_test_s1_timestamps.csv"><code>EPIC_test_s2_timestamps.csv</code></a> (<a href="#epic_test_s2_timestampscsv">Info</a>)</li>
@@ -78,98 +78,104 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h3 id="epic_train_action_labels.csv">EPIC_train_action_labels.csv</h3>
 <p>CSV file containing 14 columns:</p>
 <table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 8%" />
+<col style="width: 65%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>uid</code></td>
-<td align="left">int</td>
-<td align="left"><code>6374</code></td>
-<td align="left">Unique ID of the segment.</td>
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>6374</code></td>
+<td>Unique ID of the segment.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>video_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P03_01</code></td>
-<td align="left">Video the segment is in.</td>
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P03_01</code></td>
+<td>Video the segment is in.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>narration</code></td>
-<td align="left">string</td>
-<td align="left"><code>close fridge</code></td>
-<td align="left">English description of the action provided by the participant.</td>
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>close fridge</code></td>
+<td>English description of the action provided by the participant.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>start_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:23:43.847</code></td>
-<td align="left">Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:23:43.847</code></td>
+<td>Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>stop_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:23:47.212</code></td>
-<td align="left">End time in <code>HH:mm:ss.SSS</code> of the action.</td>
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:23:47.212</code></td>
+<td>End time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>start_frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>85430</code></td>
-<td align="left">Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>85430</code></td>
+<td>Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>stop_frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>85643</code></td>
-<td align="left">End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>85643</code></td>
+<td>End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 <tr class="even">
-<td align="left"><code>participant_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P03</code></td>
-<td align="left">ID of the participant.</td>
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P03</code></td>
+<td>ID of the participant.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>verb</code></td>
-<td align="left">string</td>
-<td align="left"><code>close</code></td>
-<td align="left">Parsed verb from the narration.</td>
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>close</code></td>
+<td>Parsed verb from the narration.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>noun</code></td>
-<td align="left">string</td>
-<td align="left"><code>fridge</code></td>
-<td align="left">First parsed noun from the narration.</td>
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>fridge</code></td>
+<td>First parsed noun from the narration.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>verb_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>3</code></td>
-<td align="left">Numeric ID of the parsed verb's class.</td>
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the parsed verb’s class.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>noun_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>10</code></td>
-<td align="left">Numeric ID of the parsed noun's class.</td>
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>10</code></td>
+<td>Numeric ID of the parsed noun’s class.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>all_nouns</code></td>
-<td align="left">list of string (1 or more)</td>
-<td align="left"><code>['fridge']</code></td>
-<td align="left">List of all parsed nouns from the narration.</td>
+<td><code>all_nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>['fridge']</code></td>
+<td>List of all parsed nouns from the narration.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>all_noun_classes</code></td>
-<td align="left">list of int (1 or more)</td>
-<td align="left"><code>[10]</code></td>
-<td align="left">List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.</td>
+<td><code>all_noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[10]</code></td>
+<td>List of numeric IDs corresponding to all of the parsed nouns’ classes from the narration.</td>
 </tr>
 </tbody>
 </table>
@@ -177,98 +183,104 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h3 id="epic_train_invalid_labels.csv">EPIC_train_invalid_labels.csv</h3>
 <p>CSV file containing 14 columns:</p>
 <table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 8%" />
+<col style="width: 65%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>uid</code></td>
-<td align="left">int</td>
-<td align="left"><code>6374</code></td>
-<td align="left">Unique ID of the segment.</td>
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>6374</code></td>
+<td>Unique ID of the segment.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>video_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P03_01</code></td>
-<td align="left">Video the segment is in.</td>
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P03_01</code></td>
+<td>Video the segment is in.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>narration</code></td>
-<td align="left">string</td>
-<td align="left"><code>close fridge</code></td>
-<td align="left">English description of the action provided by the participant.</td>
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>close fridge</code></td>
+<td>English description of the action provided by the participant.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>start_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:23:43.847</code></td>
-<td align="left">Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:23:43.847</code></td>
+<td>Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>stop_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:23:47.212</code></td>
-<td align="left">End time in <code>HH:mm:ss.SSS</code> of the action.</td>
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:23:47.212</code></td>
+<td>End time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>start_frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>85430</code></td>
-<td align="left">Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>85430</code></td>
+<td>Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>stop_frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>85643</code></td>
-<td align="left">End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>85643</code></td>
+<td>End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 <tr class="even">
-<td align="left"><code>participant_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P03</code></td>
-<td align="left">ID of the participant.</td>
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P03</code></td>
+<td>ID of the participant.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>verb</code></td>
-<td align="left">string</td>
-<td align="left"><code>close</code></td>
-<td align="left">Parsed verb from the narration.</td>
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>close</code></td>
+<td>Parsed verb from the narration.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>noun</code></td>
-<td align="left">string</td>
-<td align="left"><code>fridge</code></td>
-<td align="left">First parsed noun from the narration.</td>
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>fridge</code></td>
+<td>First parsed noun from the narration.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>verb_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>3</code></td>
-<td align="left">Numeric ID of the parsed verb's class.</td>
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the parsed verb’s class.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>noun_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>10</code></td>
-<td align="left">Numeric ID of the parsed noun's class.</td>
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>10</code></td>
+<td>Numeric ID of the parsed noun’s class.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>all_nouns</code></td>
-<td align="left">list of string (1 or more)</td>
-<td align="left"><code>['fridge']</code></td>
-<td align="left">List of all parsed nouns from the narration.</td>
+<td><code>all_nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>['fridge']</code></td>
+<td>List of all parsed nouns from the narration.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>all_noun_classes</code></td>
-<td align="left">list of int (1 or more)</td>
-<td align="left"><code>[10]</code></td>
-<td align="left">List of numeric IDs corresponding to all of the parsed nouns' classes from the narration.</td>
+<td><code>all_noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[10]</code></td>
+<td>List of numeric IDs corresponding to all of the parsed nouns’ classes from the narration.</td>
 </tr>
 </tbody>
 </table>
@@ -277,150 +289,373 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>CSV file containing 5 columns:</p>
 <p><em>Note: The start/end timestamp refers to the start/end time of the narration, not the action itself.</em></p>
 <table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 6%" />
+<col style="width: 15%" />
+<col style="width: 62%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>participant_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P03</code></td>
-<td align="left">ID of the participant.</td>
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P03</code></td>
+<td>ID of the participant.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>video_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P03_01</code></td>
-<td align="left">Video the segment is in.</td>
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P03_01</code></td>
+<td>Video the segment is in.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>start_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:23:43.847</code></td>
-<td align="left">Start time in <code>HH:mm:ss.SSS</code> of the narration.</td>
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:23:43.847</code></td>
+<td>Start time in <code>HH:mm:ss.SSS</code> of the narration.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>stop_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:23:47.212</code></td>
-<td align="left">End time in <code>HH:mm:ss.SSS</code> of the narration.</td>
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:23:47.212</code></td>
+<td>End time in <code>HH:mm:ss.SSS</code> of the narration.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>narration</code></td>
-<td align="left">string</td>
-<td align="left"><code>close fridge</code></td>
-<td align="left">English description of the action provided by the participant.</td>
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>close fridge</code></td>
+<td>English description of the action provided by the participant.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="epic_train_object_labels.csv">EPIC_train_object_labels.csv</h3>
 <p>CSV file containing 6 columns:</p>
 <table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 51%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>noun_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>20</code></td>
-<td align="left">Integer value representing the class in noun-classes.csv.</td>
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>20</code></td>
+<td>Integer value representing the class in noun-classes.csv.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>noun</code></td>
-<td align="left">string</td>
-<td align="left"><code>bag</code></td>
-<td align="left">Original string name for the object.</td>
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>bag</code></td>
+<td>Original string name for the object.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>participant_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P01</code></td>
-<td align="left">ID of participant.</td>
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P01</code></td>
+<td>ID of participant.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>video_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P01_01</code></td>
-<td align="left">Video the object was annotated in.</td>
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_01</code></td>
+<td>Video the object was annotated in.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>056581</code></td>
-<td align="left">Frame number of the annotated object.</td>
+<td><code>frame</code></td>
+<td>int</td>
+<td><code>056581</code></td>
+<td>Frame number of the annotated object.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>bounding_boxes</code></td>
-<td align="left">list of 4-tuple (0 or more)</td>
-<td align="left"><code>&quot;[(76, 1260, 462, 186)]&quot;</code></td>
-<td align="left">Annotated boxes with format <code>(&lt;top:int&gt;,&lt;left:int&gt;,&lt;height:int&gt;,&lt;width:int&gt;)</code>.</td>
+<td><code>bounding_boxes</code></td>
+<td>list of 4-tuple (0 or more)</td>
+<td><code>&quot;[(76, 1260, 462, 186)]&quot;</code></td>
+<td>Annotated boxes with format <code>(&lt;top:int&gt;,&lt;left:int&gt;,&lt;height:int&gt;,&lt;width:int&gt;)</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="epic_train_object_action_correspondence.csv">EPIC_train_object_action_correspondence.csv</h3>
+<p>CSV file containing 5 columns:</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P01</code></td>
+<td>ID of participant.</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_01</code></td>
+<td>Video the frames are part of.</td>
+</tr>
+<tr class="odd">
+<td><code>object_frame</code></td>
+<td>int</td>
+<td><code>56581</code></td>
+<td>Frame number of the object detection image from <code>object_detection_images</code>.</td>
+</tr>
+<tr class="even">
+<td><code>action_frame</code></td>
+<td>int</td>
+<td><code>56638</code></td>
+<td>Frame number of the corresponding image in the released frames for action recognition in <code>frames_rgb_flow</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.00</code></td>
+<td>Timestamp in <code>HH:mm:ss.SS</code> corresponding to the frame.</td>
+</tr>
+</tbody>
+</table>
+<p>Please note we have included a python pickle file for ease of use. This includes a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.</p>
+<h3 id="epic_test_s1_object_action_correspondence.csv">EPIC_test_s1_object_action_correspondence.csv</h3>
+<p>CSV file containing 5 columns:</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P01</code></td>
+<td>ID of participant.</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_11</code></td>
+<td>Video containing the object s1 test frames.</td>
+</tr>
+<tr class="odd">
+<td><code>object_frame</code></td>
+<td>int</td>
+<td><code>33601</code></td>
+<td>Frame number of the object detection image from <code>object_detection_images</code>.</td>
+</tr>
+<tr class="even">
+<td><code>action_frame</code></td>
+<td>int</td>
+<td><code>33635</code></td>
+<td>Frame number of the corresponding image in the released frames for action recognition in <code>frames_rgb_flow</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>timestamp</code></td>
+<td>string</td>
+<td><code>00:09:20.58</code></td>
+<td>Timestamp in <code>HH:mm:ss.SS</code> corresponding to the frames.</td>
+</tr>
+</tbody>
+</table>
+<p>Please note we have included a python pickle file for ease of use. This includes a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.</p>
+<h3 id="epic_test_s2_object_action_correspondence.csv">EPIC_test_s2_object_action_correspondence.csv</h3>
+<p>CSV file containing 5 columns:</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P09</code></td>
+<td>ID of participant.</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P09_05</code></td>
+<td>Video containing the object s2 test frames.</td>
+</tr>
+<tr class="odd">
+<td><code>object_frame</code></td>
+<td>int</td>
+<td><code>15991</code></td>
+<td>Frame number of the object detection image from <code>object_detection_images</code>.</td>
+</tr>
+<tr class="even">
+<td><code>action_frame</code></td>
+<td>int</td>
+<td><code>16007</code></td>
+<td>Frame number of the corresponding image in the released frames for action recognition in <code>frames_rgb_flow</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>timestamp</code></td>
+<td>string</td>
+<td><code>00:04:26.78</code></td>
+<td>Timestamp in <code>HH:mm:ss.SS</code> corresponding to the frames.</td>
+</tr>
+</tbody>
+</table>
+<p>Please note we have included a python pickle file for ease of use. This includes a pandas dataframe with the same layout as above. This pickle file was created with pickle protocol 2 on pandas version 0.22.0.</p>
+<h3 id="epic_test_s1_object_video_list.csv">EPIC_test_s1_object_video_list.csv</h3>
+<p>CSV file listing the videos used to obtain the object s1 test frames. The frames can be obtained from <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">RDSF</a> under <code>object_detection_images/test</code>. Please test all frames from this folder for the videos listed in this csv.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_11</code></td>
+<td>Video containing the object s1 test frames.</td>
+</tr>
+<tr class="even">
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P01</code></td>
+<td>ID of the participant.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="epic_test_s2_object_video_list.csv">EPIC_test_s2_object_video_list.csv</h3>
+<p>CSV file listing the videos used to obtain the object s2 test frames. The frames can be obtained from <a href="https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d">RDSF</a> under <code>object_detection_images/test</code>. Please test all frames from this folder for the videos listed in this csv.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_11</code></td>
+<td>Video containing the object s2 test frames.</td>
+</tr>
+<tr class="even">
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P01</code></td>
+<td>ID of the participant.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="epic_test_s1_timestamps.csv">EPIC_test_s1_timestamps.csv</h3>
 <p>CSV file containing 7 columns:</p>
 <table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 3%" />
+<col style="width: 9%" />
+<col style="width: 75%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>uid</code></td>
-<td align="left">int</td>
-<td align="left"><code>1924</code></td>
-<td align="left">Unique ID of the segment.</td>
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>1924</code></td>
+<td>Unique ID of the segment.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>participant_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P01</code></td>
-<td align="left">ID of the participant.</td>
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P01</code></td>
+<td>ID of the participant.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>video_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P01_11</code></td>
-<td align="left">Video the segment is in.</td>
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_11</code></td>
+<td>Video the segment is in.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>start_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:00:00.000</code></td>
-<td align="left">Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.000</code></td>
+<td>Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>stop_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:00:01.890</code></td>
-<td align="left">End time in <code>HH:mm:ss.SSS</code> of the action.</td>
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:01.890</code></td>
+<td>End time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>start_frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>1</code></td>
-<td align="left">Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>1</code></td>
+<td>Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>stop_frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>93</code></td>
-<td align="left">End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>93</code></td>
+<td>End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -428,56 +663,62 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h3 id="epic_test_s2_timestamps.csv">EPIC_test_s2_timestamps.csv</h3>
 <p>CSV file containing 7 columns:</p>
 <table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 3%" />
+<col style="width: 9%" />
+<col style="width: 75%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>uid</code></td>
-<td align="left">int</td>
-<td align="left"><code>15582</code></td>
-<td align="left">Unique ID of the segment.</td>
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>15582</code></td>
+<td>Unique ID of the segment.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>participant_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P09</code></td>
-<td align="left">ID of the participant.</td>
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P09</code></td>
+<td>ID of the participant.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>video_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P09_01</code></td>
-<td align="left">Video the segment is in.</td>
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P09_01</code></td>
+<td>Video the segment is in.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>start_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:00:01.970</code></td>
-<td align="left">Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:01.970</code></td>
+<td>Start time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>stop_timestamp</code></td>
-<td align="left">string</td>
-<td align="left"><code>00:00:03.090</code></td>
-<td align="left">End time in <code>HH:mm:ss.SSS</code> of the action.</td>
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:03.090</code></td>
+<td>End time in <code>HH:mm:ss.SSS</code> of the action.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>start_frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>118</code></td>
-<td align="left">Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>118</code></td>
+<td>Start frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>stop_frame</code></td>
-<td align="left">int</td>
-<td align="left"><code>185</code></td>
-<td align="left">End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>185</code></td>
+<td>End frame of the action (WARNING only for frames extracted as detailed in <a href="#video-information">Video Information</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -486,102 +727,120 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>CSV file containing 3 columns:</p>
 <p><em>Note: a colon represents a compound noun with the more generic noun first. So pan:dust should be read as dust pan.</em></p>
 <table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 23%" />
+<col style="width: 25%" />
+<col style="width: 41%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>noun_id</code></td>
-<td align="left">int</td>
-<td align="left"><code>2</code></td>
-<td align="left">ID of the noun class.</td>
+<td><code>noun_id</code></td>
+<td>int</td>
+<td><code>2</code></td>
+<td>ID of the noun class.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>class_key</code></td>
-<td align="left">string</td>
-<td align="left"><code>pan:dust</code></td>
-<td align="left">Key of the noun class.</td>
+<td><code>class_key</code></td>
+<td>string</td>
+<td><code>pan:dust</code></td>
+<td>Key of the noun class.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>nouns</code></td>
-<td align="left">list of string (1 or more)</td>
-<td align="left"><code>&quot;['pan:dust', 'dustpan']&quot;</code></td>
-<td align="left">All nouns within the class (includes the key).</td>
+<td><code>nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>&quot;['pan:dust', 'dustpan']&quot;</code></td>
+<td>All nouns within the class (includes the key).</td>
 </tr>
 </tbody>
 </table>
 <h3 id="epic_verb_classes.csv">EPIC_verb_classes.csv</h3>
 <p>CSV file containing 3 columns:</p>
 <table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 22%" />
+<col style="width: 29%" />
+<col style="width: 38%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>verb_id</code></td>
-<td align="left">int</td>
-<td align="left"><code>3</code></td>
-<td align="left">ID of the verb class.</td>
+<td><code>verb_id</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>ID of the verb class.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>class_key</code></td>
-<td align="left">string</td>
-<td align="left"><code>close</code></td>
-<td align="left">Key of the verb class.</td>
+<td><code>class_key</code></td>
+<td>string</td>
+<td><code>close</code></td>
+<td>Key of the verb class.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>verbs</code></td>
-<td align="left">list of string (1 or more)</td>
-<td align="left"><code>&quot;['close', 'close-off', 'shut']&quot;</code></td>
-<td align="left">All verbs within the class (includes the key).</td>
+<td><code>verbs</code></td>
+<td>list of string (1 or more)</td>
+<td><code>&quot;['close', 'close-off', 'shut']&quot;</code></td>
+<td>All verbs within the class (includes the key).</td>
 </tr>
 </tbody>
 </table>
 <h3 id="epic_descriptions.csv">EPIC_descriptions.csv</h3>
 <p>CSV file containing 4 columns:</p>
 <table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 39%" />
+<col style="width: 44%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>video_id</code></td>
-<td align="left">string</td>
-<td align="left"><code>P01_01</code></td>
-<td align="left">ID of the video.</td>
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_01</code></td>
+<td>ID of the video.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>date</code></td>
-<td align="left">string</td>
-<td align="left"><code>30/04/2017</code></td>
-<td align="left">Date on which the video was shot.</td>
+<td><code>date</code></td>
+<td>string</td>
+<td><code>30/04/2017</code></td>
+<td>Date on which the video was shot.</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>time</code></td>
-<td align="left">string</td>
-<td align="left"><code>13:49:00</code></td>
-<td align="left">Local recording time of the video.</td>
+<td><code>time</code></td>
+<td>string</td>
+<td><code>13:49:00</code></td>
+<td>Local recording time of the video.</td>
 </tr>
 <tr class="even">
-<td align="left"><code>description</code></td>
-<td align="left">string</td>
-<td align="left"><code>prepared breakfast with soy milk and cereals</code></td>
-<td align="left">Description of the activities contained in the video.</td>
+<td><code>description</code></td>
+<td>string</td>
+<td><code>prepared breakfast with soy milk and cereals</code></td>
+<td>Description of the activities contained in the video.</td>
 </tr>
 </tbody>
 </table>
@@ -590,24 +849,24 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <table>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>verb_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>1</code></td>
-<td align="left">Numeric ID of the verb class</td>
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>1</code></td>
+<td>Numeric ID of the verb class</td>
 </tr>
 <tr class="even">
-<td align="left"><code>verb</code></td>
-<td align="left">string</td>
-<td align="left"><code>put</code></td>
-<td align="left">Verb corresponding to the verb class</td>
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>put</code></td>
+<td>Verb corresponding to the verb class</td>
 </tr>
 </tbody>
 </table>
@@ -616,106 +875,118 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <table>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>noun_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>3</code></td>
-<td align="left">Numeric ID of the noun class</td>
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the noun class</td>
 </tr>
 <tr class="even">
-<td align="left"><code>noun</code></td>
-<td align="left">string</td>
-<td align="left"><code>tap</code></td>
-<td align="left">Noun corresponding to the noun class</td>
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>tap</code></td>
+<td>Noun corresponding to the noun class</td>
 </tr>
 </tbody>
 </table>
 <h3 id="epic_many_shot_actions.csv">EPIC_many_shot_actions.csv</h3>
 <p>CSV file containing the many shot actions. An action class (composed of a verb class and noun class) is considered many shot if BOTH the verb class and noun class are many shot AND the action class appears in training at least once. (NOTE: this file is derived from <code>EPIC_train_action_labels.csv</code>, checkout the <a href="https://github.com/epic-kitchens/epic-many-shot-classes">accompanying notebook</a> demonstrating how we compute these classes)</p>
 <table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 38%" />
+<col style="width: 42%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>action_class</code></td>
-<td align="left">(int, int)</td>
-<td align="left"><code>(9, 84)</code></td>
-<td align="left">Numeric Pair of IDs, first the verb, then the noun</td>
+<td><code>action_class</code></td>
+<td>(int, int)</td>
+<td><code>(9, 84)</code></td>
+<td>Numeric Pair of IDs, first the verb, then the noun</td>
 </tr>
 <tr class="even">
-<td align="left"><code>verb_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>9</code></td>
-<td align="left">Numeric ID of the verb class</td>
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>9</code></td>
+<td>Numeric ID of the verb class</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>verb</code></td>
-<td align="left">string</td>
-<td align="left"><code>move</code></td>
-<td align="left">Verb corresponding to the verb class</td>
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>move</code></td>
+<td>Verb corresponding to the verb class</td>
 </tr>
 <tr class="even">
-<td align="left"><code>noun_class</code></td>
-<td align="left">int</td>
-<td align="left"><code>84</code></td>
-<td align="left">Numeric ID of the noun class</td>
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>84</code></td>
+<td>Numeric ID of the noun class</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>noun</code></td>
-<td align="left">string</td>
-<td align="left"><code>sausage</code></td>
-<td align="left">Noun corresponding to the noun class</td>
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>sausage</code></td>
+<td>Noun corresponding to the noun class</td>
 </tr>
 </tbody>
 </table>
 <h3 id="epic_video_info.csv">EPIC_video_info.csv</h3>
 <p>CSV file containing information for each video</p>
 <table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 38%" />
+<col style="width: 42%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Type</th>
-<th align="left">Example</th>
-<th align="left">Description</th>
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>video</code></td>
-<td align="left">(string)</td>
-<td align="left"><code>P01_01</code></td>
-<td align="left">Video ID</td>
+<td><code>video</code></td>
+<td>(string)</td>
+<td><code>P01_01</code></td>
+<td>Video ID</td>
 </tr>
 <tr class="even">
-<td align="left"><code>resolution</code></td>
-<td align="left">(string)</td>
-<td align="left"><code>1920x1080</code></td>
-<td align="left">Resolution of the video, format is <code>WIDTHxHEIGHT</code></td>
+<td><code>resolution</code></td>
+<td>(string)</td>
+<td><code>1920x1080</code></td>
+<td>Resolution of the video, format is <code>WIDTHxHEIGHT</code></td>
 </tr>
 <tr class="odd">
-<td align="left"><code>duration</code></td>
-<td align="left">(float)</td>
-<td align="left"><code>1652.152817</code></td>
-<td align="left">Duration of the video, in seconds</td>
+<td><code>duration</code></td>
+<td>(float)</td>
+<td><code>1652.152817</code></td>
+<td>Duration of the video, in seconds</td>
 </tr>
 <tr class="even">
-<td align="left"><code>fps</code></td>
-<td align="left">(float)</td>
-<td align="left"><code>59.9400599400599</code></td>
-<td align="left">Frame rate of the video</td>
+<td><code>fps</code></td>
+<td>(float)</td>
+<td><code>59.9400599400599</code></td>
+<td>Frame rate of the video</td>
 </tr>
 </tbody>
 </table>
@@ -723,9 +994,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>Due to the size of the dataset we provide scripts for downloading parts of the dataset:</p>
 <ul>
 <li><a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_videos.sh">videos</a> (750GB)</li>
-<li><a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_frames_rgb_flow.sh">frames</a> (320GB)</li>
+<li><a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_frames_rgb_flow.sh">frames</a> (320GB)
+<ul>
 <li><a href="https://raw.githubusercontent.com/epic-kitchens/download-scripts/master/frames_rgb_flow/download_rgb.sh">rgb-frames</a> (220GB)</li>
 <li><a href="https://raw.githubusercontent.com/epic-kitchens/download-scripts/master/frames_rgb_flow/download_flow.sh">flow-frames</a> (100GB)</li>
+</ul></li>
 <li><a href="https://github.com/epic-kitchens/download-scripts/blob/master/download_object_detection_images.sh">object annotation images</a> (80GB)</li>
 </ul>
 <p><em>Note: These scripts will work for Linux and Mac. For Windows users a bash installation should work.</em></p>
