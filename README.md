@@ -72,20 +72,19 @@ Initially we are only releasing the full ground truth for the training set in or
 * `README.html`
 * `README.pdf`
 * [`license.txt`](#license)
-* [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv))
-* [`EPIC_train_action_labels.pkl`](EPIC_train_action_labels.pkl) ([Info](#epic_train_action_labelscsv))
-* [`EPIC_train_invalid_labels.csv`](EPIC_train_invalid_labels.csv) ([Info](#epic_train_invalid_labelscsv))
-* [`EPIC_train_invalid_labels.pkl`](EPIC_train_invalid_labels.pkl) ([Info](#epic_train_invalid_labelscsv))
-* [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv))
+* [`EPIC_train_action_labels.csv`](EPIC_train_action_labels.csv) ([Info](#epic_train_action_labelscsv)) ([Pickle](EPIC_train_action_labels.pkl))
 * [`EPIC_train_object_labels.csv`](EPIC_train_object_labels.csv) ([Info](#epic_train_object_labelscsv))
-* [`EPIC_train_object_action_correspondence.csv`](EPIC_train_object_action_correspondence.csv) ([Info](#epic_train_object_action_correspondencecsv))
-* [`EPIC_train_object_action_correspondence.pkl`](EPIC_train_object_action_correspondence.pkl) ([Info](#epic_train_object_action_correspondencecsv))
-* [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv))
-* [`EPIC_test_s1_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s1_timestampscsv))
-* [`EPIC_test_s2_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s2_timestampscsv))
-* [`EPIC_test_s2_timestamps.pkl`](EPIC_test_s1_timestamps.pkl) ([Info](#epic_test_s2_timestampscsv))
+* [`EPIC_train_object_action_correspondence.csv`](EPIC_train_object_action_correspondence.csv) ([Info](#epic_train_object_action_correspondencecsv)) ([Pickle](EPIC_train_object_action_correspondence.pkl))
+* [`EPIC_test_s1_timestamps.csv`](EPIC_test_s1_timestamps.csv) ([Info](#epic_test_s1_timestampscsv)) ([Pickle](EPIC_test_s1_timestamps.pkl))
+* [`EPIC_test_s2_timestamps.csv`](EPIC_test_s2_timestamps.csv) ([Info](#epic_test_s2_timestampscsv)) ([Pickle](EPIC_test_s2_timestamps.pkl))
 * [`EPIC_noun_classes.csv`](EPIC_noun_classes.csv) ([Info](#epic_noun_classescsv))
 * [`EPIC_verb_classes.csv`](EPIC_verb_classes.csv) ([Info](#epic_verb_classescsv))
+
+
+### Additional Files
+
+* [`EPIC_train_invalid_labels.csv`](EPIC_train_invalid_labels.csv) ([Info](#epic_train_invalid_labelscsv)) ([Pickle](EPIC_train_invalid_labels.pkl))
+* [`EPIC_train_action_narrations.csv`](EPIC_train_action_narrations.csv) ([Info](#epic_train_action_narrationscsv))
 * [`EPIC_descriptions.csv`](EPIC_descriptions.csv) ([Info](#epic_descriptionscsv))
 * [`EPIC_many_shot_verbs.csv`](EPIC_many_shot_verbs.csv) ([Info](#epic_many_shot_verbscsv))
 * [`EPIC_many_shot_nouns.csv`](EPIC_many_shot_nouns.csv) ([Info](#epic_many_shot_nounscsv))
@@ -363,4 +362,4 @@ but not in any way that suggests the licensor endorses you or your use. You
 may not use the material for commercial purposes.
 
 ## Changelog
-* 09/04/18: Initial Release
+See release history for changelog.
