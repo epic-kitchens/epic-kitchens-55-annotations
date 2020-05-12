@@ -8,7 +8,7 @@
 [![Data](https://img.shields.io/badge/raw_data-1TB-lightgrey.svg)](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d)
 <!-- end badges -->
 
-> [EPIC-Kitchens-55](https://epic-kitchens.github.io/) is the largest dataset in first-person (egocentric) vision; 55hours f multi-faceted, non-scripted recordings in native environments - i.e. the wearers' homes, capturing all daily activities in the kitchen over multiple days. Annotations are collected using a novel `live' audio commentary approach.
+> [EPIC-Kitchens-55](https://epic-kitchens.github.io/) is the largest dataset in first-person (egocentric) vision; 55 hours of multi-faceted, non-scripted recordings in native environments - i.e. the wearers' homes, capturing all daily activities in the kitchen over multiple days. Annotations are collected using a novel `live' audio commentary approach.
 
 ## Authors
 Dima Damen (1)
