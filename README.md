@@ -2,7 +2,7 @@
 
 <!-- start badges -->
 
-[![CircleCI](https://img.shields.io/circleci/project/github/epic-kitchens/annotations.svg)](https://circleci.com/gh/epic-kitchens/annotations)
+[![CircleCI](https://img.shields.io/circleci/project/github/epic-kitchens/epic-kitchens-55-annotations.svg)](https://circleci.com/gh/epic-kitchens/epic-kitchens-55-annotations)
 [![GitHub release](https://img.shields.io/github/release/epic-kitchens/annotations.svg)](https://github.com/epic-kitchens/annotations/releases/latest)
 [![arXiv-1804.02748](https://img.shields.io/badge/arXiv-1804.02748-red.svg)](https://arxiv.org/abs/1804.02748)
 [![Data](https://img.shields.io/badge/raw_data-1TB-lightgrey.svg)](https://data.bris.ac.uk/data/dataset/3h91syskeag572hl6tvuovwv4d)
