@@ -409,5 +409,8 @@ and indicate if changes were made. You may do so in any reasonable manner,
 but not in any way that suggests the licensor endorses you or your use. You
 may not use the material for commercial purposes.
 
+## Disclaimer
+EPIC-KITCHENS-55 and EPIC-KITCHENS-100 were collected as a tool for research in computer vision, however, it is worth noting that the dataset may have unintended biases (including those of a societal, gender or racial nature).
+
 ## Changelog
 See release history for changelog.
